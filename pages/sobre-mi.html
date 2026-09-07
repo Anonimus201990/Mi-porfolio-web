@@ -5,16 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Sobre mí — Lorena Paola Sartori. Product Project Manager con experiencia en QA, Project Management y Product Management.">
   <title>Sobre mí | Lorena Sartori</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="../style/styles.css">
 </head>
 
-<body>
+<body class="site-body">
 
-  <header>
-    <p>Lorena Paola Sartori</p>
-    <p>Product Lab</p>
+  <header class="site-header">
+    <p class="brand-name">Lorena Paola Sartori</p>
+    <p class="brand-label">Product Lab</p>
 
-    <nav aria-label="Menú principal">
-      <ul>
+    <nav class="site-nav" aria-label="Menú principal">
+      <ul class="nav-list">
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="./sobre-mi.html" aria-current="page">Sobre mí</a></li>
         <li><a href="./proyectos.html">Proyectos</a></li>
@@ -23,14 +31,15 @@
       </ul>
     </nav>
 
-    <p><a href="../Documento/LORENA PAOLA SARTORI.pdf">Ver CV</a></p>
-    <p><a href="../index.html#contacto">Contacto</a></p>
+    <!-- Enlace al PDF sin espacios -->
+    <p><a href="../Documento/LORENA_PAOLA_SARTORI.pdf" class="header-action">Ver CV</a></p>
+    <p><a href="../index.html#contacto" class="header-action">Contacto</a></p>
   </header>
 
-  <main>
+  <main class="site-main">
 
-    <section>
-      <h1>Sobre mí</h1>
+    <section class="page-section">
+      <h1 class="page-title">Sobre mí</h1>
 
       <article>
         <p>
@@ -52,97 +61,56 @@
           src="../Imagenes/hero-product-project-manager.png"
           alt="Lorena Sartori, Product Project Manager, en un entorno de trabajo relacionado con productos digitales"
         />
-        <figcaption>
+        <figcaption class="metadata">
           Producto, personas y calidad: distintas perspectivas para tomar mejores decisiones.
         </figcaption>
       </figure>
     </section>
 
-    <section>
-      <h2>Mi recorrido profesional</h2>
+    <section class="page-section">
+      <h2 class="section-title">Mi recorrido profesional</h2>
 
-      <article>
+      <article class="project-card">
         <h3>QA y Quality</h3>
-        <p>
-          Mi experiencia en QA me enseñó a analizar requisitos,
-          identificar riesgos, pensar en escenarios y validar cómo
-          funciona realmente un producto. También desarrollé experiencia
-          en testing funcional, regresión, smoke testing, APIs y aplicaciones móviles.
-        </p>
+        <p>Mi experiencia en QA me enseñó a analizar requisitos...</p>
       </article>
 
-      <article>
+      <article class="project-card">
         <h3>Project Management</h3>
-        <p>
-          La gestión de proyectos amplió mi mirada hacia la planificación,
-          coordinación, seguimiento, trazabilidad, gestión de riesgos
-          y organización del trabajo de los equipos.
-        </p>
+        <p>La gestión de proyectos amplió mi mirada hacia la planificación...</p>
       </article>
 
-      <article>
+      <article class="project-card">
         <h3>Product Project Management</h3>
-        <p>
-          Hoy integro ambas perspectivas con una mirada de producto:
-          entender qué problema estamos resolviendo, para quién,
-          qué valor buscamos generar y cómo podemos convertir esa
-          idea en una solución que el equipo pueda construir y validar.
-        </p>
+        <p>Hoy integro ambas perspectivas con una mirada de producto...</p>
       </article>
     </section>
 
-    <section>
-      <h2>Cómo evolucionó mi mirada</h2>
+    <section class="page-section">
+      <h2 class="section-title">Cómo evolucionó mi mirada</h2>
 
-      <article>
-        <p>
-          Mi carrera no fue una línea directa de QA hacia Producto.
-          Cada etapa incorporó una nueva perspectiva a la anterior.
-        </p>
-
+      <article class="project-card">
+        <p>Mi carrera no fue una línea directa de QA hacia Producto...</p>
         <p><strong>Calidad → Procesos → Equipos → Producto → Usuario + Negocio</strong></p>
-
-        <p>
-          QA me enseñó a preguntar qué puede salir mal.
-          Producto me llevó a sumar otra pregunta: ¿deberíamos construir esto?
-          La gestión de proyectos agregó una tercera: ¿cómo hacemos que el equipo pueda llevarlo adelante?
-        </p>
+        <p>QA me enseñó a preguntar qué puede salir mal...</p>
       </article>
     </section>
 
-    <section>
-      <h2>Romper estereotipos</h2>
+    <section class="page-section">
+      <h2 class="section-title">Romper estereotipos</h2>
 
-      <article>
-        <p>
-          Creo que romper estereotipos también significa cuestionar
-          cómo hacemos las cosas.
-        </p>
-
-        <p>
-          Mi recorrido profesional no siguió una única ruta y tampoco
-          creo que exista una única manera correcta de trabajar en Producto.
-          Combino experiencias de QA, Project Management, UX, Producto e IA
-          para abordar cada problema desde distintas perspectivas.
-        </p>
-
-        <p>
-          No busco encajar en una definición rígida del rol.
-          Busco entender qué necesita el problema, qué necesita el equipo
-          y qué necesita el usuario para tomar mejores decisiones.
-        </p>
+      <article class="project-card">
+        <p>Creo que romper estereotipos también significa cuestionar...</p>
+        <p>Mi recorrido profesional no siguió una única ruta...</p>
+        <p>No busco encajar en una definición rígida del rol...</p>
       </article>
     </section>
 
-    <section>
-      <h2>Actualmente estoy explorando</h2>
+    <section class="page-section">
+      <h2 class="section-title">Actualmente estoy explorando</h2>
 
-      <article>
-        <p>
-          Actualmente estoy profundizando en temas que amplían mi forma
-          de trabajar y pensar productos digitales.
-        </p>
-
+      <article class="project-card">
+        <p>Actualmente estoy profundizando en temas que amplían mi forma...</p>
         <ul>
           <li>IA aplicada a Product Management</li>
           <li>Product Discovery y experimentación</li>
@@ -155,22 +123,24 @@
 
   </main>
 
-  <footer>
-    <p>© 2026 Lorena Paola Sartori. Todos los derechos reservados.</p>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="brand-name">Lorena Paola Sartori</p>
+      <p class="brand-label">Product Lab</p>
 
-    <nav aria-label="Enlaces de redes sociales">
-      <ul>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/lorena-paola-sartori-pm/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="site-nav" aria-label="Navegación secundaria">
+        <ul class="footer-nav-list">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./sobre-mi.html">Sobre mí</a></li>
+          <li><a href="./proyectos.html">Proyectos</a></li>
+          <li><a href="./como-trabajo.html">Cómo trabajo</a></li>
+          <li><a href="./ideas-recursos.html">Ideas y Recursos</a></li>
+        </ul>
+      </nav>
+
+      <p><a href="https://www.linkedin.com/in/lorena-paola-sartori-pm/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+      <p class="footer-copy">© 2026 Lorena Paola Sartori. Todos los derechos reservados.</p>
+    </div>
   </footer>
 
 </body>

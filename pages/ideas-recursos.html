@@ -5,16 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Ideas y recursos — Lorena Paola Sartori. Reflexiones, experimentos y materiales sobre Product Management, IA, calidad y equipos.">
   <title>Ideas y Recursos | Lorena Sartori - Product Lab</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="../style/styles.css">
 </head>
 
-<body>
+<body class="site-body">
 
-  <header>
-    <p>Lorena Paola Sartori</p>
-    <p>Product Lab</p>
+  <header class="site-header">
+    <p class="brand-name">Lorena Paola Sartori</p>
+    <p class="brand-label">Product Lab</p>
 
-    <nav aria-label="Menú principal">
-      <ul>
+    <nav class="site-nav" aria-label="Menú principal">
+      <ul class="nav-list">
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="./sobre-mi.html">Sobre mí</a></li>
         <li><a href="./proyectos.html">Proyectos</a></li>
@@ -22,13 +30,17 @@
         <li><a href="./ideas-recursos.html" aria-current="page">Ideas y Recursos</a></li>
       </ul>
     </nav>
+
+    <!-- Ajuste 2: botones de acceso rápido -->
+    <p><a href="../Documento/LORENA_PAOLA_SARTORI.pdf" class="header-action">Ver CV</a></p>
+    <p><a href="../index.html#contacto" class="header-action">Contacto</a></p>
   </header>
 
-  <main>
+  <main class="site-main">
 
     <!-- Presentación -->
-    <section>
-      <h1>Ideas y recursos</h1>
+    <section class="page-section">
+      <h1 class="page-title">Ideas y recursos</h1>
 
       <p>
         Comparto reflexiones, experimentos y materiales prácticos sobre Product Management,
@@ -42,13 +54,13 @@
           src="../Imagenes/ideas-thumb.png"
           alt="Mesa de trabajo con notas, laptop y esquemas de producto"
         />
-        <figcaption>Piensa · Construye · Aprende · Comparte — reflexiones y recursos prácticos.</figcaption>
+        <figcaption class="metadata">Piensa · Construye · Aprende · Comparte — reflexiones y recursos prácticos.</figcaption>
       </figure>
     </section>
 
     <!-- Información general breve -->
-    <section>
-      <h2>Qué vas a encontrar aquí</h2>
+    <section class="page-section">
+      <h2 class="section-title">Qué vas a encontrar aquí</h2>
 
       <p>
         Publicaciones cortas sobre decisiones de producto, resúmenes de experimentos con IA,
@@ -56,9 +68,9 @@
       </p>
     </section>
 
-    <!-- Servicios / Destacados / Beneficios (lista) -->
-    <section>
-      <h2>Destacados y recursos prácticos</h2>
+    <!-- Servicios / Destacados / Beneficios -->
+    <section class="page-section">
+      <h2 class="section-title">Destacados y recursos prácticos</h2>
 
       <ul>
         <li><strong>Guías de Product Discovery:</strong> plantillas para entrevistas, mapas de problemas y priorización.</li>
@@ -69,61 +81,64 @@
       </ul>
     </section>
 
-    <!-- Figura con iframe (contenido embebido) -->
-    <section>
-      <h2>Contenido embebido</h2>
+    <!-- Contenido embebido -->
+    <section class="page-section">
+      <h2 class="section-title">Contenido embebido</h2>
 
       <p>
         Aquí comparto entradas seleccionadas y publicaciones externas que complementan los artículos y experimentos.
       </p>
 
       <figure>
+        <!-- Ajuste 3: iframe responsivo -->
         <iframe
           src="https://anonimus201990.blogspot.com/"
-          width="1000"
-          height="480"
+          style="max-width: 100%; width: 100%; height: 480px; border: none;"
           title="Blog de Ideas y Recursos de Lorena Paola Sartori"
           allow="fullscreen"
         ></iframe>
-        <figcaption>Entradas seleccionadas de mi blog y notas de aprendizaje sobre producto, IA y calidad.</figcaption>
+        <figcaption class="metadata">Entradas seleccionadas de mi blog y notas de aprendizaje sobre producto, IA y calidad.</figcaption>
       </figure>
 
-      <p><a href="./ideas-recursos.html">Ver todas las publicaciones</a></p>
+      <p><a href="./ideas-recursos.html" class="header-action">Ver todas las publicaciones</a></p>
     </section>
 
     <!-- CTA / Enlaces útiles -->
-    <section>
-      <h2>Materiales y contacto</h2>
+    <section class="page-section">
+      <h2 class="section-title">Materiales y contacto</h2>
 
       <p>
         Si querés acceder a plantillas, CV o casos completos, encontrás enlaces útiles a continuación.
       </p>
 
       <p>
-        <a href="../Documento/LORENA PAOLA SARTORI.pdf">Ver CV</a>
-        <a href="./proyectos.html">Ver proyectos</a>
-        <a href="../index.html#contacto">Contactame</a>
+        <!-- Ajuste 1: nombre de archivo sin espacios -->
+        <a href="../Documento/LORENA_PAOLA_SARTORI.pdf" class="header-action">Ver CV</a>
+        <a href="./proyectos.html" class="header-action">Ver proyectos</a>
+        <a href="../index.html#contacto" class="header-action">Contactame</a>
       </p>
     </section>
 
   </main>
 
-  <footer>
-    <p>© 2026 Lorena Paola Sartori. Todos los derechos reservados.</p>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="brand-name">Lorena Paola Sartori</p>
+      <p class="brand-label">Product Lab</p>
 
-    <nav aria-label="Enlaces de redes sociales">
-      <ul>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/lorena-paola-sartori-pm/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="site-nav" aria-label="Navegación secundaria">
+        <ul class="footer-nav-list">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./sobre-mi.html">Sobre mí</a></li>
+          <li><a href="./proyectos.html">Proyectos</a></li>
+          <li><a href="./como-trabajo.html">Cómo trabajo</a></li>
+          <li><a href="./ideas-recursos.html">Ideas y Recursos</a></li>
+        </ul>
+      </nav>
+
+      <p><a href="https://www.linkedin.com/in/lorena-paola-sartori-pm/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+      <p class="footer-copy">© 2026 Lorena Paola Sartori. Todos los derechos reservados.</p>
+    </div>
   </footer>
 
 </body>
