@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Lorena Paola Sartori | Product Project Manager. Conecto producto, proyectos, equipos, usuario y calidad para transformar problemas en soluciones.">
     <title>Lorena Paola Sartori | Product Project Manager</title>
 
     <!-- Google Fonts -->
@@ -16,131 +15,162 @@
     <!-- CSS externo -->
     <link rel="stylesheet" href="./style/styles.css">
 </head>
-<body class="site-body">
+
+<body class="site-body home-page">
 
     <header class="site-header">
-        <p class="brand-name">Lorena Paola Sartori</p>
-        <p class="brand-label">Product Lab</p>
+        <div class="brand">
+            <p class="brand-name">Lorena Paola Sartori</p>
+            <p class="brand-label">Product Lab</p>
+        </div>
 
-        <nav aria-label="Navegación principal">
+        <nav class="site-nav" aria-label="Navegación principal">
             <ul class="nav-list">
-                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./index.html" aria-current="page">Inicio</a></li>
                 <li><a href="./pages/sobre-mi.html">Sobre mí</a></li>
                 <li><a href="./pages/proyectos.html">Proyectos</a></li>
                 <li><a href="./pages/como-trabajo.html">Cómo trabajo</a></li>
                 <li><a href="./pages/ideas-recursos.html">Ideas y Recursos</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
 
-        <!-- Ajuste 1: nombre de archivo sin espacios -->
-        <p><a href="./Documento/LORENA_PAOLA_SARTORI.pdf" class="header-action">Ver CV</a></p>
-        <p><a href="#contacto" class="header-action">Hablemos</a></p>
+        <div class="header-actions">
+            <a href="./documento/LORENA_PAOLA_SARTORI.pdf" class="header-action">Ver CV</a>
+            <a href="./pages/contacto.html" class="header-action">Hablemos</a>
+        </div>
     </header>
 
     <main class="site-main">
 
         <!-- HERO -->
         <section class="page-section hero-section">
-            <figure>
-                <img src="./Imagenes/hero.png" alt="Representación de una Product Project Manager conectando personas, producto, usuario, negocio y tecnología">
+            <div class="hero-content">
+                <h1 class="page-title">Conecto<br><span class="highlight-red">Producto<br>y Calidad</span></h1>
+                <p>Trabajo en la intersección entre producto, proyectos, equipos, usuario y calidad para transformar problemas en soluciones que puedan construirse, validarse y evolucionar.</p>
+                <div class="hero-actions">
+                    <a href="./pages/proyectos.html" class="header-action">Ver proyectos</a>
+                    <a href="./pages/como-trabajo.html" class="header-action">Conocer cómo trabajo</a>
+                </div>
+            </div>
+            <figure class="hero-image">
+                <img src="./imagenes/hero.png" alt="Representación geométrica con círculos y cuadrados de colores: rojo, azul, amarillo, verde agua y negro">
                 <figcaption class="metadata">Piensa · Construye · Aprende · Comparte</figcaption>
             </figure>
-
-            <h1 class="page-title">Product Project Manager</h1>
-
-            <p>Conecto producto, proyectos, equipos, usuario y calidad para transformar problemas en soluciones que puedan construirse, validarse y evolucionar.</p>
-            
-            <p>Mi experiencia en QA, Project Management y Product Management me permite combinar análisis, organización, calidad y experimentación para acompañar un producto desde el problema hasta la ejecución.</p>
-
-            <p><a href="./pages/proyectos.html" class="header-action">Ver proyectos</a></p>
-            <p><a href="./pages/como-trabajo.html" class="header-action">Conocer cómo trabajo</a></p>
         </section>
 
         <!-- DE PROBLEMAS A PRODUCTOS -->
-        <section class="page-section">
+        <section class="page-section problems-section">
             <h2 class="section-title">De problemas a productos</h2>
-            
+
             <p>Trabajo en la intersección entre producto y ejecución: ayudo a transformar problemas, necesidades y oportunidades en decisiones y trabajo que un equipo pueda llevar adelante.</p>
-           
-            <ul>
-                <li><p>Entender el problema, el usuario, el contexto y las oportunidades.</p></li>
-                <li><p>Convertir información en hipótesis, requerimientos y prioridades.</p></li>
-                <li><p>Dar estructura, trazabilidad y foco al proyecto y al equipo.</p></li>
-                <li><p>Acompañar la ejecución y facilitar la coordinación entre las distintas áreas.</p></li>
-                <li><p>Incorporar calidad, riesgos y escenarios reales antes y durante la construcción.</p></li>
-                <li><p>Revisar resultados, identificar aprendizajes y ajustar las decisiones.</p></li>
+
+            <ul class="numbered-list">
+                <li class="numbered-item">
+                    <span class="number">01</span>
+                    <div>
+                        <h3>Entender</h3>
+                        <p>El problema, el usuario, el contexto y las oportunidades.</p>
+                    </div>
+                </li>
+                <li class="numbered-item">
+                    <span class="number">02</span>
+                    <div>
+                        <h3>Definir</h3>
+                        <p>Convertir información en hipótesis, requerimientos y prioridades.</p>
+                    </div>
+                </li>
+                <li class="numbered-item">
+                    <span class="number">03</span>
+                    <div>
+                        <h3>Organizar</h3>
+                        <p>Dar estructura, trazabilidad y foco al proyecto y al equipo.</p>
+                    </div>
+                </li>
+                <li class="numbered-item">
+                    <span class="number">04</span>
+                    <div>
+                        <h3>Construir</h3>
+                        <p>Acompañar la ejecución y facilitar la coordinación entre las distintas áreas.</p>
+                    </div>
+                </li>
+                <li class="numbered-item">
+                    <span class="number">05</span>
+                    <div>
+                        <h3>Aprender</h3>
+                        <p>Revisar resultados, identificar aprendizajes y ajustar las decisiones.</p>
+                    </div>
+                </li>
             </ul>
         </section>
 
         <!-- CAPACIDADES -->
-        <section class="page-section">
+        <section class="page-section capacities-section">
             <h2 class="section-title">Capacidades que pongo en práctica</h2>
-            <ul>
-                <li>
-                    <article class="project-card">
-                        <h3>Product Discovery</h3>
-                        <p>Investigo problemas, necesidades, contexto y oportunidades para reducir incertidumbre antes de construir.</p>
-                    </article>
-                </li>
-               
-                <li>
-                    <article class="project-card">
-                        <h3>Project Management</h3>
-                        <p>Organizo objetivos, prioridades, entregables, seguimiento y trazabilidad para convertir iniciativas en trabajo ejecutable.</p>
-                    </article>
-                </li>
-               
-                <li>
-                    <article class="project-card">
-                        <h3>Team Management</h3>
-                        <p>Facilito coordinación, claridad y participación para que los equipos puedan avanzar alineados.</p>
-                    </article>
-                </li>
-               
-                <li>
-                    <article class="project-card">
-                        <h3>Quality Assurance</h3>
-                        <p>Incorporo riesgos, escenarios, criterios de aceptación y validación desde las primeras decisiones del producto.</p>
-                    </article>
-                </li>
-               
-                <li>
-                    <article class="project-card">
-                        <h3>AI for Product</h3>
-                        <p>Utilizo IA para investigar, analizar, experimentar y construir soluciones, manteniendo el criterio humano en las decisiones.</p>
-                    </article>
-                </li>
-            </ul>
+            <div class="capacities-grid">
+                <article class="capacity-card card-blue">
+                    <span class="card-number">01</span>
+                    <h3>Product Discovery</h3>
+                    <p>Investigo problemas, necesidades, contexto y oportunidades para reducir incertidumbre antes de construir.</p>
+                </article>
+
+                <article class="capacity-card card-red">
+                    <span class="card-number">02</span>
+                    <h3>Project Management</h3>
+                    <p>Organizo objetivos, prioridades, entregables, seguimiento y trazabilidad para convertir iniciativas en trabajo ejecutable.</p>
+                </article>
+
+                <article class="capacity-card card-teal">
+                    <span class="card-number">03</span>
+                    <h3>Team Management</h3>
+                    <p>Facilito coordinación, claridad y participación para que los equipos puedan avanzar alineados.</p>
+                </article>
+
+                <article class="capacity-card card-yellow">
+                    <span class="card-number">04</span>
+                    <h3>Quality Assurance</h3>
+                    <p>Incorporo riesgos, escenarios, criterios de aceptación y validación desde las primeras decisiones del producto.</p>
+                </article>
+
+                <article class="capacity-card card-black">
+                    <span class="card-number">05</span>
+                    <h3>AI for Product</h3>
+                    <p>Utilizo IA para investigar, analizar, experimentar y construir soluciones, manteniendo el criterio humano en las decisiones.</p>
+                </article>
+            </div>
             <p><a href="./pages/sobre-mi.html" class="header-action">Ver mi recorrido profesional</a></p>
         </section>
 
-        <!-- Ajuste 3: sección de contacto -->
-        <section id="contacto" class="page-section">
-            <h2 class="section-title">Contacto</h2>
+        <!-- CONTACTO -->
+        <section id="contacto" class="page-section contact-section">
+            <h2 class="section-title">¿Construimos algo que perdure?</h2>
             <p>Si querés conversar sobre producto, gestión, calidad o explorar proyectos en conjunto, conectemos.</p>
-            <p><a href="https://www.linkedin.com/in/lorena-paola-sartori-pm/" target="_blank" rel="noopener noreferrer" class="header-action">Conectar en LinkedIn</a></p>
+            <a href="https://www.linkedin.com/in/lorena-paola-sartori-pm/" target="_blank" rel="noopener noreferrer" class="header-action">Conectar en LinkedIn</a>
         </section>
-    
+
     </main>
 
     <footer class="site-footer">
-        <p class="brand-name">Lorena Paola Sartori</p>
-        <p class="brand-label">Product Lab</p>
+        <div class="footer-content">
+            <p class="brand-name">Lorena Paola Sartori</p>
+            <p class="brand-label">Product Lab</p>
 
-        <nav aria-label="Navegación secundaria">
-            <ul class="footer-nav-list">
-                <!-- Ajuste 2: consistencia en rutas relativas -->
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/sobre-mi.html">Sobre mí</a></li>
-                <li><a href="./pages/proyectos.html">Proyectos</a></li>
-                <li><a href="./pages/como-trabajo.html">Cómo trabajo</a></li>
-                <li><a href="./pages/ideas-recursos.html">Ideas y Recursos</a></li>
-            </ul>
-        </nav>
+            <nav class="site-nav" aria-label="Navegación secundaria">
+                <ul class="footer-nav-list">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pages/sobre-mi.html">Sobre mí</a></li>
+                    <li><a href="./pages/proyectos.html">Proyectos</a></li>
+                    <li><a href="./pages/como-trabajo.html">Cómo trabajo</a></li>
+                    <li><a href="./pages/ideas-recursos.html">Ideas y Recursos</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
 
-        <p><a href="https://www.linkedin.com/in/lorena-paola-sartori-pm/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-        <p class="footer-copy">© 2026 Lorena Paola Sartori. Todos los derechos reservados.</p>
+            <p><a href="https://www.linkedin.com/in/lorena-paola-sartori-pm/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+            <p class="footer-copy">© 2026 Lorena Paola Sartori. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
 </body>
+
 </html>

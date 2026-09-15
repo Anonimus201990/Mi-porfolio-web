@@ -1,147 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sobre mí — Lorena Paola Sartori. Product Project Manager con experiencia en QA, Project Management y Product Management.">
-  <title>Sobre mí | Lorena Sartori</title>
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
-  <!-- CSS externo -->
-  <link rel="stylesheet" href="../style/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sobre mí — Lorena Paola Sartori. Product Project Manager con experiencia en QA, Project Management y Product Management.">
+    <title>Sobre mí | Lorena Sartori</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="../style/styles.css">
 </head>
 
 <body class="site-body">
 
-  <header class="site-header">
-    <p class="brand-name">Lorena Paola Sartori</p>
-    <p class="brand-label">Product Lab</p>
+    <header class="site-header">
+        <div class="brand">
+            <p class="brand-name">Lorena Paola Sartori</p>
+            <p class="brand-label">Product Lab</p>
+        </div>
 
-    <nav class="site-nav" aria-label="Menú principal">
-      <ul class="nav-list">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./sobre-mi.html" aria-current="page">Sobre mí</a></li>
-        <li><a href="./proyectos.html">Proyectos</a></li>
-        <li><a href="./como-trabajo.html">Cómo trabajo</a></li>
-        <li><a href="./ideas-recursos.html">Ideas y Recursos</a></li>
-      </ul>
-    </nav>
+        <nav class="site-nav" aria-label="Navegación principal">
+            <ul class="nav-list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./sobre-mi.html" aria-current="page">Sobre mí</a></li>
+                <li><a href="./proyectos.html">Proyectos</a></li>
+                <li><a href="./como-trabajo.html">Cómo trabajo</a></li>
+                <li><a href="./ideas-recursos.html">Ideas y Recursos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
 
-    <!-- Enlace al PDF sin espacios -->
-    <p><a href="../Documento/LORENA_PAOLA_SARTORI.pdf" class="header-action">Ver CV</a></p>
-    <p><a href="../index.html#contacto" class="header-action">Contacto</a></p>
-  </header>
+        <div class="header-actions">
+            <a href="../documento/LORENA_PAOLA_SARTORI.pdf" class="header-action">Ver CV</a>
+            <a href="./contacto.html" class="header-action">Hablemos</a>
+        </div>
+    </header>
 
-  <main class="site-main">
+    <main class="site-main">
 
-    <section class="page-section">
-      <h1 class="page-title">Sobre mí</h1>
+        <section class="page-section">
+            <h1 class="page-title">Sobre mí</h1>
 
-      <article>
-        <p>
-          Soy Product Project Manager y trabajo en la intersección entre
-          producto, proyectos, equipos, usuario y calidad.
-          Mi recorrido comenzó en QA y evolucionó hacia la gestión de
-          proyectos y el desarrollo de productos digitales.
-        </p>
+            <article>
+                <p>Soy Product Project Manager y trabajo en la intersección entre producto, proyectos, equipos, usuario y calidad. Mi recorrido comenzó en QA y evolucionó hacia la gestión de proyectos y el desarrollo de productos digitales.</p>
 
-        <p>
-          Esta combinación me permite mirar un producto desde diferentes
-          perspectivas: entender el problema, organizar la ejecución,
-          cuestionar decisiones y cuidar la calidad de lo que construimos.
-        </p>
-      </article>
+                <p>Esta combinación me permite mirar un producto desde diferentes perspectivas: entender el problema, organizar la ejecución, cuestionar decisiones y cuidar la calidad de lo que construimos.</p>
+            </article>
 
-      <figure>
-        <img
-          src="../Imagenes/hero-product-project-manager.png"
-          alt="Lorena Sartori, Product Project Manager, en un entorno de trabajo relacionado con productos digitales"
-        />
-        <figcaption class="metadata">
-          Producto, personas y calidad: distintas perspectivas para tomar mejores decisiones.
-        </figcaption>
-      </figure>
-    </section>
+            <figure>
+                <img src="../imagenes/hero-product-project-manager.png" alt="Lorena Sartori, Product Project Manager, en un entorno de trabajo relacionado con productos digitales">
+                <figcaption class="metadata">Producto, personas y calidad: distintas perspectivas para tomar mejores decisiones.</figcaption>
+            </figure>
+        </section>
 
-    <section class="page-section">
-      <h2 class="section-title">Mi recorrido profesional</h2>
+        <section class="page-section journey-section">
+            <h2 class="section-title">Mi recorrido profesional</h2>
 
-      <article class="project-card">
-        <h3>QA y Quality</h3>
-        <p>Mi experiencia en QA me enseñó a analizar requisitos...</p>
-      </article>
+            <div class="journey-yellow">
+                <div class="journey-cards">
+                    <article class="journey-card">
+                        <span class="journey-number">01</span>
+                        <h3>QA y Quality</h3>
+                        <p>Mi experiencia en QA me enseñó a analizar requisitos, anticipar riesgos y garantizar que lo construido cumple con lo propuesto. Cerca de 3 años en Blue Trail Software trabajando en fintech, mobile, web y APIs.</p>
+                    </article>
 
-      <article class="project-card">
-        <h3>Project Management</h3>
-        <p>La gestión de proyectos amplió mi mirada hacia la planificación...</p>
-      </article>
+                    <article class="journey-card">
+                        <span class="journey-number">02</span>
+                        <h3>Project Management</h3>
+                        <p>La gestión de proyectos amplió mi mirada hacia la planificación, coordinación de equipos y trazabilidad. Aprendí a traducir necesidades en trabajo ejecutable y a acompañar la ejecución con claridad.</p>
+                    </article>
 
-      <article class="project-card">
-        <h3>Product Project Management</h3>
-        <p>Hoy integro ambas perspectivas con una mirada de producto...</p>
-      </article>
-    </section>
+                    <article class="journey-card">
+                        <span class="journey-number">03</span>
+                        <h3>Product Project Management</h3>
+                        <p>Hoy integro ambas perspectivas con una mirada de producto. Como Product Project Manager en Tambo360 combino estrategia, ejecución y calidad para crear productos que realmente resuelven problemas.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <section class="page-section">
-      <h2 class="section-title">Cómo evolucionó mi mirada</h2>
+        <section class="page-section evolution-section">
+            <h2 class="section-title">Cómo evolucionó mi mirada</h2>
 
-      <article class="project-card">
-        <p>Mi carrera no fue una línea directa de QA hacia Producto...</p>
-        <p><strong>Calidad → Procesos → Equipos → Producto → Usuario + Negocio</strong></p>
-        <p>QA me enseñó a preguntar qué puede salir mal...</p>
-      </article>
-    </section>
+            <div class="evolution-black">
+                <article class="evolution-card">
+                    <p>Mi carrera no fue una línea directa de QA hacia Producto. Fue más bien una evolución de perspectivas:</p>
+                    <p><strong>Calidad → Procesos → Equipos → Producto → Usuario + Negocio</strong></p>
+                    <p>QA me enseñó a preguntar qué puede salir mal. Project Management me mostró cómo organizar personas y procesos. Product Management me conectó con el usuario y el valor que generamos.</p>
+                    <div class="evolution-dots">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-teal"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-red"></span>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <section class="page-section">
-      <h2 class="section-title">Romper estereotipos</h2>
+        <section class="page-section stereotype-section">
+            <h2 class="section-title">Romper estereotipos</h2>
 
-      <article class="project-card">
-        <p>Creo que romper estereotipos también significa cuestionar...</p>
-        <p>Mi recorrido profesional no siguió una única ruta...</p>
-        <p>No busco encajar en una definición rígida del rol...</p>
-      </article>
-    </section>
+            <div class="stereotype-yellow">
+                <article class="stereotype-card">
+                    <p>Creo que romper estereotipos también significa cuestionar los roles tradicionales. Mi recorrido profesional no siguió una única ruta clara. No busco encajar en una definición rígida del rol.</p>
+                    <p>Prefiero ser útil, aprender constantemente, y adaptarme a lo que el producto y el equipo necesitan en cada momento.</p>
+                </article>
+            </div>
+        </section>
 
-    <section class="page-section">
-      <h2 class="section-title">Actualmente estoy explorando</h2>
+        <section class="page-section exploring-section">
+            <h2 class="section-title">Actualmente estoy explorando</h2>
 
-      <article class="project-card">
-        <p>Actualmente estoy profundizando en temas que amplían mi forma...</p>
-        <ul>
-          <li>IA aplicada a Product Management</li>
-          <li>Product Discovery y experimentación</li>
-          <li>Calidad integrada al ciclo de producto</li>
-          <li>Dinámicas y liderazgo de equipos</li>
-          <li>Data-driven decision making</li>
-        </ul>
-      </article>
-    </section>
+            <div class="exploring-yellow">
+                <article class="exploring-card">
+                    <p>Actualmente estoy profundizando en temas que amplían mi forma de pensar el producto y la gestión:</p>
+                    <div class="tags-container">
+                        <span class="tag tag-teal">IA aplicada a Product Management</span>
+                        <span class="tag tag-yellow">Product Discovery y experimentación</span>
+                        <span class="tag tag-teal">Calidad integrada al ciclo de producto</span>
+                        <span class="tag tag-yellow">Dinámicas y liderazgo de equipos</span>
+                        <span class="tag tag-teal">Data-driven decision making</span>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-  </main>
+    </main>
 
-  <footer class="site-footer">
-    <div class="footer-content">
-      <p class="brand-name">Lorena Paola Sartori</p>
-      <p class="brand-label">Product Lab</p>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p class="brand-name">Lorena Paola Sartori</p>
+            <p class="brand-label">Product Lab</p>
 
-      <nav class="site-nav" aria-label="Navegación secundaria">
-        <ul class="footer-nav-list">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./sobre-mi.html">Sobre mí</a></li>
-          <li><a href="./proyectos.html">Proyectos</a></li>
-          <li><a href="./como-trabajo.html">Cómo trabajo</a></li>
-          <li><a href="./ideas-recursos.html">Ideas y Recursos</a></li>
-        </ul>
-      </nav>
+            <nav class="site-nav" aria-label="Navegación secundaria">
+                <ul class="footer-nav-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./sobre-mi.html">Sobre mí</a></li>
+                    <li><a href="./proyectos.html">Proyectos</a></li>
+                    <li><a href="./como-trabajo.html">Cómo trabajo</a></li>
+                    <li><a href="./ideas-recursos.html">Ideas y Recursos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
 
-      <p><a href="https://www.linkedin.com/in/lorena-paola-sartori-pm/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-      <p class="footer-copy">© 2026 Lorena Paola Sartori. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+            <p><a href="https://www.linkedin.com/in/lorena-paola-sartori-pm/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+            <p class="footer-copy">© 2026 Lorena Paola Sartori. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 </body>
+
 </html>
