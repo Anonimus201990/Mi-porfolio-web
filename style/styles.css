@@ -1,9 +1,25 @@
-* {
+/* =========================================================
+   PALETA DE COLORES
+   ========================================================= */
+
+/*
+Crema:      #F7F5EF - fondo principal y superficies claras
+Negro:      #171717 - estructura, texto y fondos oscuros
+Amarillo:   #E7BD5A - identidad y recorrido
+Azul:       #1769AA - proyectos y producto
+Rojo:       #D92525 - acción y toma de decisiones
+Verde agua: #46B8A8 - ideas, aprendizaje y exploración
+Gris:       #5F625F - textos secundarios
+Blanco:     #FFFFFF - contraste
+*/
+ *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
+/* 
 html { scroll-behavior: smooth; }
 
 body,
