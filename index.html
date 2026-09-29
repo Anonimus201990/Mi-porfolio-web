@@ -7,40 +7,35 @@
     <meta name="description" content="Lorena Paola Sartori | Product Project Manager. Conecto producto, proyectos, equipos, usuario y calidad para transformar problemas en soluciones.">
     <title>Lorena Paola Sartori | Product Project Manager</title>
 
-    <!-- Google Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-
-    <!-- CSS externo -->
     <link rel="stylesheet" href="./style/styles.css">
 </head>
 
 <body class="site-body home-page">
-
     <header class="site-header">
-        <div class="brand">
-            <p class="brand-name">Lorena Paola Sartori</p>
-            <p class="brand-label">Product Lab</p>
-        </div>
-
-        <nav class="site-nav" aria-label="Navegación principal">
-            <ul class="nav-list">
-                <li><a href="./index.html" aria-current="page">Inicio</a></li>
-                <li><a href="./pages/sobre-mi.html">Sobre mí</a></li>
-                <li><a href="./pages/proyectos.html">Proyectos</a></li>
-                <li><a href="./pages/como-trabajo.html">Cómo trabajo</a></li>
-                <li><a href="./pages/ideas-recursos.html">Ideas y Recursos</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg site-navbar" aria-label="Navegación principal">
+            <div class="container-fluid site-navbar-inner">
+                <a class="navbar-brand brand" href="./index.html" aria-label="Lorena Paola Sartori Product Lab">
+                    <img class="brand-logo" src="./imagenes/ponle-en-el-nombre-lorena-paola-sartori.png" alt="Lorena Paola Sartori Product Lab">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false" aria-label="Abrir navegación"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="main-navigation">
+                    <ul class="navbar-nav nav-list me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="./index.html" aria-current="page">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/sobre-mi.html">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/proyectos.html">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/como-trabajo.html">Cómo trabajo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/ideas-recursos.html">Ideas y Recursos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                    <div class="header-actions"><a href="./documento/lorena-paola-sartori.pdf" class="header-action">Ver CV</a><a href="./pages/contacto.html" class="header-action">Hablemos</a></div>
+                </div>
+            </div>
         </nav>
-
-        <div class="header-actions">
-            <a href="./documento/LORENA%20PAOLA%20SARTORI.pdf" class="header-action">Ver CV</a>
-            <a href="./pages/contacto.html" class="header-action">Hablemos</a>
-        </div>
     </header>
-
     <main class="site-main">
 
         <!-- HERO -->
@@ -57,6 +52,76 @@
                 <img src="./imagenes/hero.png" alt="Representación geométrica con círculos y cuadrados de colores: rojo, azul, amarillo, verde agua y negro">
                 <figcaption class="metadata">Piensa · Construye · Aprende · Comparte</figcaption>
             </figure>
+        </section>
+
+        <!-- METRICAS DE EXPERIENCIA -->
+        <section class="project-metrics" aria-label="Métricas de experiencia en proyectos">
+            <div class="metrics-container">
+                <article class="metric-item metric-neutral">
+                    <strong>11</strong>
+                    <span>Proyectos en los que participé</span>
+                </article>
+                <article class="metric-item metric-yellow">
+                    <strong>6</strong>
+                    <span>Proyectos entregados</span>
+                </article>
+                <article class="metric-item metric-neutral">
+                    <strong>3</strong>
+                    <span>Proyectos coordinados</span>
+                </article>
+                <article class="metric-item metric-black">
+                    <strong>11</strong>
+                    <span>Entregas a tiempo</span>
+                </article>
+            </div>
+            <p class="metrics-note">Métricas basadas en mi experiencia profesional y proyectos realizados. También diseñé 1 proyecto UX/UI.</p>
+        </section>
+
+        <!-- COMO TRABAJO -->
+        <section class="work-method-section" aria-labelledby="work-method-title">
+            <div class="work-method-inner">
+                <p class="eyebrow eyebrow-light">Metodología</p>
+                <h2 id="work-method-title" class="section-title section-title-light">Cómo trabajo</h2>
+                <div class="method-grid">
+                    <article class="method-card"><span class="method-number method-red">01</span><h3>Clarificar</h3><p>Entender el problema, el contexto y la definición de éxito antes de construir.</p></article>
+                    <article class="method-card"><span class="method-number method-blue">02</span><h3>Estructurar</h3><p>Convertir hallazgos en prioridades, trabajo ejecutable y decisiones trazables.</p></article>
+                    <article class="method-card"><span class="method-number method-teal">03</span><h3>Entregar</h3><p>Acompañar al equipo, validar la calidad y aprender de los resultados.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS SELECCIONADOS -->
+        <section class="selected-projects-section" aria-labelledby="selected-projects-title">
+            <div class="selected-projects-inner">
+                <div class="section-heading-row">
+                    <div><p class="eyebrow">Evidencia</p><h2 id="selected-projects-title" class="section-title">Proyectos seleccionados</h2></div>
+                    <a href="./pages/proyectos.html#proyectos-destacados" class="header-action selected-projects-link">Ver todos</a>
+                </div>
+                <div id="selected-projects-carousel" class="carousel slide selected-project-carousel" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#selected-projects-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Ver Tambo360"></button>
+                        <button type="button" data-bs-target="#selected-projects-carousel" data-bs-slide-to="1" aria-label="Ver BiT"></button>
+                        <button type="button" data-bs-target="#selected-projects-carousel" data-bs-slide-to="2" aria-label="Ver CRM + IA"></button>
+                        <button type="button" data-bs-target="#selected-projects-carousel" data-bs-slide-to="3" aria-label="Ver Tecniclick"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a class="selected-project-slide" href="./pages/proyectos.html#tambo360"><img src="./imagenes/tambo360.jpeg" alt="Captura del proyecto Tambo360"><div><span class="project-card-label label-blue">01 · Producto</span><h3>Tambo360</h3><p>Webapp para transformar información operativa en decisiones.</p></div></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a class="selected-project-slide" href="./pages/proyectos.html#bit"><img src="./imagenes/bit.jpeg" alt="Captura del proyecto BiT"><div><span class="project-card-label label-red">02 · QA</span><h3>BiT</h3><p>Calidad integrada al ciclo de trabajo y a las decisiones de producto.</p></div></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a class="selected-project-slide" href="./pages/proyectos.html#crm-ia"><img src="./imagenes/crm.jpeg" alt="Captura del proyecto CRM con inteligencia artificial"><div><span class="project-card-label label-teal">03 · Delivery</span><h3>CRM + IA</h3><p>Organización del trabajo y trazabilidad con experimentación de IA.</p></div></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a class="selected-project-slide" href="./pages/proyectos.html#tecniclick"><img src="./imagenes/tecniclick.jpeg" alt="Captura del proyecto Tecniclick"><div><span class="project-card-label label-yellow">04 · Discovery</span><h3>Tecniclick</h3><p>Proyecto de diseño UX/UI orientado a conectar usuarios.</p></div></a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#selected-projects-carousel" data-bs-slide="prev" aria-label="Proyecto anterior"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#selected-projects-carousel" data-bs-slide="next" aria-label="Proyecto siguiente"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>
+                </div>
+            </div>
         </section>
 
         <!-- DE PROBLEMAS A PRODUCTOS -->
@@ -106,7 +171,9 @@
 
         <!-- CAPACIDADES -->
         <section class="page-section capacities-section">
+            <p class="eyebrow">Capacidades</p>
             <h2 class="section-title">Capacidades que pongo en práctica</h2>
+            <div class="capacities-stage">
             <div class="capacities">
                 <article class="capacity-card card-blue">
                     <span class="card-number">01</span>
@@ -137,6 +204,7 @@
                     <h3>AI for Product</h3>
                     <p>Utilizo IA para investigar, analizar, experimentar y construir soluciones, manteniendo el criterio humano en las decisiones.</p>
                 </article>
+            </div>
             </div>
             <p><a href="./pages/sobre-mi.html" class="header-action">Ver mi recorrido profesional</a></p>
         </section>
@@ -170,6 +238,9 @@
             <p class="footer-copy">© 2026 Lorena Paola Sartori. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 
