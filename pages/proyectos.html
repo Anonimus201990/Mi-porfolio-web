@@ -6,6 +6,9 @@
   <meta name="description" content="Proyectos de Lorena Paola Sartori: Product Project Management, QA, UX e IA aplicada a producto. Casos destacados, aprendizajes y resultados.">
   <title>Proyectos | Lorena Sartori</title>
   
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,26 +18,33 @@
   <link rel="stylesheet" href="../style/styles.css">
 </head>
 
-<body class="site-body">
+<body class="site-body inner-page projects-page">
 
   <header class="site-header">
-    <p class="brand-name">Lorena Paola Sartori</p>
-    <p class="brand-label">Product Lab</p>
-
-    <nav class="site-nav" aria-label="Menú principal">
-      <ul class="nav-list">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./sobre-mi.html">Sobre mí</a></li>
-        <li><a href="./proyectos.html" aria-current="page">Proyectos</a></li>
-        <li><a href="./como-trabajo.html">Cómo trabajo</a></li>
-        <li><a href="./ideas-recursos.html">Ideas y Recursos</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg site-navbar" aria-label="Navegación principal">
+      <div class="container-fluid site-navbar-inner">
+        <a class="navbar-brand brand" href="../index.html" aria-label="Lorena Paola Sartori Product Lab">
+          <img class="brand-logo" src="../imagenes/ponle-en-el-nombre-lorena-paola-sartori.png" alt="Lorena Paola Sartori Product Lab">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#projects-navigation" aria-controls="projects-navigation" aria-expanded="false" aria-label="Abrir navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="projects-navigation">
+          <ul class="navbar-nav nav-list me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="./sobre-mi.html">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="./proyectos.html" aria-current="page">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./como-trabajo.html">Cómo trabajo</a></li>
+            <li class="nav-item"><a class="nav-link" href="./ideas-recursos.html">Ideas y Recursos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+          </ul>
+          <div class="header-actions">
+            <a href="../documento/lorena-paola-sartori.pdf" class="header-action">Ver CV</a>
+            <a href="../index.html#contacto" class="header-action">Contacto</a>
+          </div>
+        </div>
+      </div>
     </nav>
-
-    <!-- Ajuste 1: nombre de archivo sin espacios -->
-    <p><a href="../Documento/LORENA_PAOLA_SARTORI.pdf" class="header-action">Ver CV</a></p>
-    <!-- Ajuste 2: acceso directo al contacto -->
-    <p><a href="../index.html#contacto" class="header-action">Contacto</a></p>
   </header>
 
   <main class="site-main">
@@ -57,75 +67,73 @@
       </article>
     </section>
 
-    <section class="page-section">
-      <h2 class="section-title">Proyectos destacados</h2>
+    <section id="proyectos-destacados" class="page-section">
+      <h2 class="section-title">Destacados</h2>
 
-      <article class="project-card">
-        <h3>Tambo360</h3>
-        <p><strong>Tipo:</strong> Proyecto profesional</p>
-        <p><strong>Contexto:</strong> SaaS B2B orientado a productores de leche...</p>
-        <p><strong>Mi rol:</strong> Product Project Management.</p>
-        <p><strong>Qué hice:</strong> Participé en Product Discovery, definición del MVP...</p>
-
-        <figure>
-          <img src="../Imagenes/tambo360.png" alt="Interfaz conceptual de Tambo360 para visualizar información operativa de un tambo" />
+      <article id="tambo360" class="project-card featured-case">
+        <div class="featured-case-copy">
+          <h3>Tambo360</h3>
+          <p><strong>Tipo:</strong> Proyecto profesional</p>
+          <p><strong>Contexto:</strong> SaaS B2B orientado a productores de leche...</p>
+          <p><strong>Mi rol:</strong> Product Project Management.</p>
+          <p><strong>Qué hice:</strong> Participé en Product Discovery, definición del MVP...</p>
+          <p><strong>Resultado:</strong> Se definió una estructura funcional de MVP...</p>
+          <p><strong>Aprendizaje:</strong> Un producto no comienza con una funcionalidad...</p>
+        </div>
+        <figure class="featured-case-visual">
+          <img src="../imagenes/tambo360.jpeg" alt="Captura del proyecto Tambo360" />
           <figcaption class="metadata">Tambo360: transformar información operativa en información útil para decidir.</figcaption>
         </figure>
-
-        <p><strong>Resultado:</strong> Se definió una estructura funcional de MVP...</p>
-        <p><strong>Aprendizaje:</strong> Un producto no comienza con una funcionalidad...</p>
       </article>
 
-      <article class="project-card">
-        <h3>BiT</h3>
-        <p><strong>Tipo:</strong> Proyecto profesional</p>
-        <p><strong>Contexto:</strong> Proyecto digital en el que participé...</p>
-        <p><strong>Mi rol:</strong> Product Project Management.</p>
-        <p><strong>Qué hice:</strong> Participé en el análisis de necesidades...</p>
-
-        <figure>
-          <img src="../Imagenes/bit.png" alt="Representación de un proyecto digital con flujo de trabajo y decisiones de producto" />
+      <article id="bit" class="project-card featured-case">
+        <div class="featured-case-copy">
+          <h3>BiT</h3>
+          <p><strong>Tipo:</strong> Proyecto profesional</p>
+          <p><strong>Contexto:</strong> Proyecto digital en el que participé...</p>
+          <p><strong>Mi rol:</strong> Product Project Management.</p>
+          <p><strong>Qué hice:</strong> Participé en el análisis de necesidades...</p>
+          <p><strong>Resultado:</strong> Se trabajó sobre la definición y evolución...</p>
+          <p><strong>Aprendizaje:</strong> Una buena decisión de producto no depende solamente...</p>
+        </div>
+        <figure class="featured-case-visual">
+          <img src="../imagenes/bit.jpeg" alt="Captura del proyecto BiT" />
           <figcaption class="metadata">BiT: decisiones de producto centradas en usuario, riesgo y valor.</figcaption>
         </figure>
-
-        <p><strong>Resultado:</strong> Se trabajó sobre la definición y evolución...</p>
-        <p><strong>Aprendizaje:</strong> Una buena decisión de producto no depende solamente...</p>
       </article>
 
-      <article class="project-card">
-        <h3>CRM + IA</h3>
-        <p><strong>Tipo:</strong> Proyecto personal</p>
-        <p><strong>Contexto:</strong> Proyecto propio nacido de una necesidad...</p>
-        <p><strong>Mi rol:</strong> Product Manager, Project Manager y responsable de la experimentación con IA.</p>
-        <p><strong>Qué hice:</strong> Identifiqué el problema, definí la solución...</p>
-
-        <figure>
-          <img src="../Imagenes/crm-ia.png" alt="Dashboard de un CRM desarrollado como experimento personal utilizando inteligencia artificial" />
+      <article id="crm-ia" class="project-card featured-case">
+        <div class="featured-case-copy">
+          <h3>CRM + IA</h3>
+          <p><strong>Tipo:</strong> Proyecto personal</p>
+          <p><strong>Contexto:</strong> Proyecto propio nacido de una necesidad...</p>
+          <p><strong>Mi rol:</strong> Product Manager, Project Manager y responsable de la experimentación con IA.</p>
+          <p><strong>Qué hice:</strong> Identifiqué el problema, definí la solución...</p>
+          <p><strong>Resultado:</strong> Se construyó un prototipo funcional...</p>
+          <p><strong>Aprendizaje:</strong> La IA puede ampliar mis capacidades...</p>
+        </div>
+        <figure class="featured-case-visual">
+          <img src="../imagenes/crm.jpeg" alt="Captura del proyecto CRM con inteligencia artificial" />
           <figcaption class="metadata">CRM + IA: un experimento para convertir una necesidad propia en un producto digital.</figcaption>
         </figure>
-
-        <p><strong>Resultado:</strong> Se construyó un prototipo funcional...</p>
-        <p><strong>Aprendizaje:</strong> La IA puede ampliar mis capacidades...</p>
       </article>
     </section>
 
     <section class="page-section">
       <h2 class="section-title">Otros proyectos</h2>
 
-      <article class="project-card">
-        <h3>Primarket</h3>
-        <p>Proyecto orientado a la distribución de materias primas...</p>
-      </article>
-
-      <article class="project-card">
-        <h3>Tecniclick</h3>
-        <p>Proyecto de producto digital orientado a conectar usuarios...</p>
-      </article>
-
-      <article class="project-card">
-        <h3>App de pedidos</h3>
-        <p>Proyecto de práctica de Project Management enfocado en coordinar...</p>
-      </article>
+      <div class="project-name-grid">
+        <article class="project-card"><img src="../imagenes/guayaba.JPG" alt="Captura del proyecto Guayaba"><h3>Guayaba</h3><p>Proyecto digital en el que participé desde la gestión y coordinación.</p></article>
+        <article class="project-card"><img src="../imagenes/distribuidoraesuina.jpeg" alt="Captura del proyecto Distribuidora La Esquina"><h3>Distribuidora La Esquina</h3><p>Proyecto freelance orientado a resolver necesidades concretas del negocio.</p></article>
+        <article class="project-card"><img src="../imagenes/flowik.jpeg" alt="Captura del proyecto Flowik"><h3>Flowik</h3><p>Proyecto digital con foco en organización y evolución del producto.</p></article>
+        <article class="project-card"><img src="../imagenes/iupi.jpeg" alt="Captura del proyecto Iupi"><h3>Iupi</h3><p>Proyecto en el que participé junto a equipos y áreas interdisciplinarias.</p></article>
+        <article class="project-card"><img src="../imagenes/playatention.jpeg" alt="Captura del proyecto PlayAttention"><h3>PlayAttention</h3><p>Proyecto de producto con foco en experiencia y coordinación.</p></article>
+        <article class="project-card"><img src="../imagenes/primarket.jpeg" alt="Captura del proyecto Primarket"><h3>Primarket</h3><p>Proyecto orientado a la distribución de materias primas.</p></article>
+        <article class="project-card"><img src="../imagenes/vocaltech.jpeg" alt="Captura del proyecto Vocaltech"><h3>Vocaltech</h3><p>Proyecto digital en el que participé durante su desarrollo.</p></article>
+        <article class="project-card"><img src="../imagenes/klowhub.jpeg" alt="Captura del proyecto Klowhub"><h3>Klowhub</h3><p>Proyecto de producto y coordinación de trabajo.</p></article>
+        <article class="project-card"><img src="../imagenes/tambo360.jpeg" alt="Captura del proyecto Tambo360"><h3>Tambo360</h3><p>Actualmente en desarrollo: información operativa para decidir mejor.</p></article>
+        <article id="tecniclick" class="project-card"><img src="../imagenes/tecniclick.jpeg" alt="Captura del proyecto Tecniclick"><h3>Tecniclick</h3><p>Proyecto de diseño UX/UI orientado a conectar usuarios.</p></article>
+      </div>
     </section>
 
   </main>
@@ -150,5 +158,7 @@
     </div>
   </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
