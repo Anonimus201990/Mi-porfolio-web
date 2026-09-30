@@ -7,6 +7,7 @@ Conecto equipos, necesidades de usuario y objetivos de negocio para convertir pr
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectemos-1769AA?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lorena-paola-sartori-pm/)
 [![GitHub](https://img.shields.io/badge/GitHub-Anonimus201990-171717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Anonimus201990)
 [![CV](https://img.shields.io/badge/CV-Ver%20perfil-D92525?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./documento/lorena-paola-sartori.pdf)
+[![Porfolio](https://img.shields.io/badge/CV-Ver%20perfil-D92525?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)]([./documento/lorena-paola-sartori.pdf](https://anonimus201990.github.io/Mi-porfolio-web/)
 
 ---
 
