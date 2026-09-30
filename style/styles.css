@@ -19,7 +19,6 @@ Blanco:     #FFFFFF - contraste
 }
 
 
-/* 
 html { scroll-behavior: smooth; }
 
 body,
@@ -517,4 +516,4 @@ a:focus, button:focus, .header-action:focus { outline: 2px solid #E7BD5A; outlin
 .site-body a:focus-visible,
 .site-body button:focus-visible { outline: 2px solid #E7BD5A; outline-offset: 3px; }
 .site-body a:active,
-.site-body button:active { transform: translateY(1px); }: translateY(1px); }
+.site-body button:active { transform: translateY(1px); }
