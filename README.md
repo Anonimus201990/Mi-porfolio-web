@@ -1,6 +1,6 @@
 # Lorena Paola Sartori | Product Lab
 
-![Identidad visual de Lorena Paola Sartori Product Lab](./imagenes/ponle-en-el-nombre-lorena-paola-sartori.png)
+![Identidad visual de Lorena Paola Sartori Product Lab](./imagenes/logo-lorena-paola-sartori.png)
 
 ## Product Project Manager · Producto · Proyectos · Calidad
 
@@ -38,29 +38,19 @@ Soy Product Project Manager y trabajo en la intersección entre producto, proyec
 
 ![Captura del proyecto Tambo360](./imagenes/tambo360.jpeg)
 
-**Proyecto profesional · Product Project Management**
-
-SaaS B2B para productores de leche. El trabajo de Product Discovery y definición inicial del MVP busca convertir información operativa en apoyo para la toma de decisiones. El portfolio documenta una estructura funcional inicial del MVP.
+**Proyecto profesional · Product Project Management:** SaaS B2B para productores de leche. El trabajo de Product Discovery y definición inicial del MVP busca convertir información operativa en apoyo para la toma de decisiones. El portfolio documenta una estructura funcional inicial del MVP.
 
 ### [BiT](./pages/proyectos.html#bit)
 
 ![Captura del proyecto BiT](./imagenes/bit.jpeg)
 
-**Proyecto profesional · Product Project Management**
-
-Participación en un producto digital con foco en integrar calidad al trabajo y a las decisiones de producto, considerando necesidades de usuario, riesgo y valor.
+**Proyecto profesional · Product Project Management:** Participación en un producto digital con foco en integrar calidad al trabajo y a las decisiones de producto, considerando necesidades de usuario, riesgo y valor.
 
 ### [CRM + IA](./pages/proyectos.html#crm-ia)
 
 ![Captura del proyecto CRM con inteligencia artificial](./imagenes/crm.jpeg)
 
-**Proyecto personal · Product y Project Management**
-
-Exploración de IA aplicada a la organización del trabajo y la trazabilidad: identificación del problema, definición de la solución y experimentación con IA. El proyecto documenta un prototipo funcional.
-
-## GitHub
-
-![Estadísticas públicas de GitHub de Anonimus201990](https://github-readme-stats.vercel.app/api?username=Anonimus201990&show_icons=true&hide_border=true&bg_color=F7F5EF&title_color=171717&text_color=171717&icon_color=1769AA)
+**Proyecto personal · Product y Project Management:** Exploración de IA aplicada a la organización del trabajo y la trazabilidad: identificación del problema, definición de la solución y experimentación con IA. El proyecto documenta un prototipo funcional.
 
 ## Contacto
 
@@ -77,9 +67,25 @@ git clone https://github.com/Anonimus201990/Mi-porfolio-web.git
 cd Mi-porfolio-web
 ```
 
-### Estructura
+### Estructura del proyecto
 
-- `index.html`: inicio, capacidades y proyectos seleccionados.
-- `pages/`: presentación, proyectos, metodología, recursos y contacto.
-- `style/styles.css`: estilos propios, paleta e interacciones.
-- `imagenes/` y `documento/`: recursos visuales y CV.
+```text
+Mi-porfolio-web/
+├── index.html
+├── README.md
+├── documento/
+│   └── lorena-paola-sartori.pdf
+├── imagenes/
+│   ├── logo-lorena-paola-sartori.png
+│   ├── hero.png
+│   ├── capturas de proyectos y recursos visuales
+│   └── index.html (página auxiliar)
+├── pages/
+│   ├── sobre-mi.html
+│   ├── proyectos.html
+│   ├── como-trabajo.html
+│   ├── ideas-recursos.html
+│   └── contacto.html
+└── style/
+    └── styles.css
+```
