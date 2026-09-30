@@ -1,7 +1,5 @@
 # Lorena Paola Sartori | Product Lab
 
-![Identidad visual de Lorena Paola Sartori Product Lab](./imagenes/logo-lorena-paola-sartori.png)
-
 ## Product Project Manager · Producto · Proyectos · Calidad
 
 Conecto equipos, necesidades de usuario y objetivos de negocio para convertir problemas en productos que puedan construirse, validarse y evolucionar.
