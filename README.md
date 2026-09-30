@@ -11,6 +11,11 @@ Conecto equipos, necesidades de usuario y objetivos de negocio para convertir pr
 
 ---
 
+## Entrega
+
+- **Repositorio público:** [github.com/Anonimus201990/Mi-porfolio-web](https://github.com/Anonimus201990/Mi-porfolio-web)
+- **Sitio desplegado:** [anonimus201990.github.io/Mi-porfolio-web](https://anonimus201990.github.io/Mi-porfolio-web)
+
 ## Sobre mí
 
 Soy Product Project Manager y trabajo en la intersección entre producto, proyectos, equipos, usuario y calidad. Mi recorrido comenzó en QA y evolucionó hacia la gestión de proyectos y productos digitales. Combino discovery, priorización y ejecución para reducir incertidumbre y ayudar a los equipos a entregar valor con calidad.
@@ -77,8 +82,7 @@ Mi-porfolio-web/
 ├── imagenes/
 │   ├── logo-lorena-paola-sartori.png
 │   ├── hero.png
-│   ├── capturas de proyectos y recursos visuales
-│   └── index.html (página auxiliar)
+│   └── capturas de proyectos y recursos visuales
 ├── pages/
 │   ├── sobre-mi.html
 │   ├── proyectos.html
