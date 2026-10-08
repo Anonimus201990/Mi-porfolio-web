@@ -1,0 +1,53 @@
+@use '../utilities/variables' as *;
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 24px;
+  background-color: $color-white;
+  border: 3px solid $color-ink;
+
+  &:hover { transform: translateY(-4px); border-color: $color-red; }
+  &:active { transform: translateY(-1px); }
+  &:focus-within { border-color: $color-yellow; }
+}
+
+.project-name-grid .project-card { padding: 0 0 24px; overflow: hidden; }
+.project-card > img,
+.project-card figure img,
+.project-name-grid .project-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  object-fit: contain;
+  background-color: $color-white;
+  border: 1px solid $color-ink;
+}
+.project-card figure { width: 100%; margin: 0; }
+.project-name-grid .project-card img { border-bottom: 3px solid $color-ink; }
+.project-name-grid .project-card h3,
+.project-name-grid .project-card p { margin-right: 24px; margin-left: 24px; }
+.project-name-grid .project-card h3 { margin-top: 8px; }
+.project-card h3,
+.project-card p { color: $color-ink; }
+
+.card-blue { color: $color-white; background-color: $color-blue; }
+.card-red { color: $color-white; background-color: $color-red; }
+.card-teal { color: $color-white; background-color: $color-teal; }
+.card-yellow { color: $color-ink; background-color: $color-yellow; }
+.card-black { color: $color-white; background-color: $color-ink; }
+.card-blue h3,
+.card-blue p,
+.card-red h3,
+.card-red p,
+.card-teal h3,
+.card-teal p,
+.card-black h3,
+.card-black p { color: $color-white; }
+
+.selected-project-card h3 { margin-top: 12px; }
+.selected-project-card p { margin-bottom: 24px; color: $color-gray; }
+
+.project-card-label { margin-right: 24px; margin-left: 24px; }

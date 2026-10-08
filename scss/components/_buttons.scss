@@ -1,0 +1,50 @@
+@use '../utilities/variables' as *;
+
+.header-action,
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  color: $color-ink;
+  background-color: $color-white;
+  border: 2px solid $color-white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  border-radius: 0;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $color-yellow;
+    border-color: $color-yellow;
+    color: $color-ink;
+  }
+
+  &:active { transform: translateY(2px); }
+}
+
+.site-navbar .header-action {
+  padding: 8px 12px;
+  color: $color-cream;
+  background-color: $color-ink;
+  border-color: $color-ink;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    color: $color-ink;
+    background-color: $color-yellow;
+    border-color: $color-yellow;
+  }
+}
+
+.header-action:focus-visible,
+.site-navbar .nav-link:focus-visible,
+.footer-nav-list a:focus-visible,
+.gallery-carousel button:focus-visible {
+  outline: 2px solid $color-yellow;
+  outline-offset: 3px;
+}
