@@ -1,0 +1,87 @@
+@use '../utilities/variables' as *;
+
+.selected-project-carousel .carousel-inner,
+.selected-project-carousel .carousel-item { height: 100%; background-color: $color-ink; }
+.selected-project-carousel .carousel-indicators { z-index: 3; margin-bottom: 16px; }
+.selected-project-carousel .carousel-indicators button {
+  width: 9px;
+  height: 9px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 1px solid $color-white;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 1;
+}
+.selected-project-carousel .carousel-indicators button.active {
+  background-color: $color-yellow;
+  border-color: $color-yellow;
+}
+.selected-project-carousel .carousel-control-prev,
+.selected-project-carousel .carousel-control-next {
+  width: 8%;
+  opacity: 0.9;
+}
+.selected-project-carousel .carousel-control-prev,
+.selected-project-carousel .carousel-control-next {
+  &:hover { opacity: 1; background-color: rgba($color-ink, 0.25); }
+}
+
+.gallery-carousel {
+  width: 100%;
+  max-width: 760px;
+  height: 440px;
+  overflow: hidden;
+  border: 3px solid $color-ink;
+  background-color: $color-ink;
+}
+.gallery-carousel .carousel-inner,
+.gallery-carousel .carousel-item { height: 100%; }
+.gallery-carousel .carousel-caption {
+  padding: 12px;
+  background-color: rgba($color-ink, 0.82);
+}
+.gallery-carousel .carousel-caption h3,
+.gallery-carousel .carousel-caption p { margin: 0; color: $color-white; }
+.gallery-carousel .carousel-indicators { z-index: 3; }
+.gallery-carousel .carousel-indicators button {
+  width: 9px;
+  height: 9px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 1px solid $color-white;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 1;
+}
+.gallery-carousel .carousel-indicators button.active {
+  background-color: $color-yellow;
+  border-color: $color-yellow;
+}
+.gallery-carousel .carousel-control-prev,
+.gallery-carousel .carousel-control-next {
+  z-index: 3;
+  width: 10%;
+  opacity: 0.9;
+}
+.gallery-carousel .carousel-control-prev:hover,
+.gallery-carousel .carousel-control-next:hover {
+  opacity: 1;
+  background-color: rgba($color-ink, 0.25);
+}
+.gallery-carousel .carousel-indicators button:hover,
+.gallery-carousel .carousel-control-prev:hover,
+.gallery-carousel .carousel-control-next:hover { opacity: 0.7; }
+
+@media (max-width: 767.98px) {
+  .selected-project-carousel { height: auto; min-height: 0; }
+  .selected-project-carousel .carousel-inner,
+  .selected-project-carousel .carousel-item { height: auto; }
+  .selected-project-slide { grid-template-columns: 1fr; height: auto; min-height: 0; }
+  .selected-project-slide > img { height: auto; min-height: 0; aspect-ratio: 16 / 9; border-right: 0; border-bottom: 1px solid $color-ink; }
+  .selected-project-slide > div { padding: 32px 24px 64px; }
+  .gallery-carousel { height: auto; min-height: 0; }
+  .gallery-carousel .carousel-inner,
+  .gallery-carousel .carousel-item { height: auto; }
+  .gallery-carousel .carousel-item img { height: auto; aspect-ratio: 16 / 9; }
+}
