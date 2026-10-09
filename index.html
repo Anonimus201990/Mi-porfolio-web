@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/styles.css">
 </head>
 
@@ -39,7 +40,7 @@
     <main class="site-main">
 
         <!-- HERO -->
-        <section class="page-section hero-section">
+        <section class="page-section hero-section" data-aos="fade-up">
             <div class="hero-content">
                 <h1 class="page-title">Conecto<br><span class="highlight-red">Producto<br>y Calidad</span></h1>
                 <p>Trabajo en la intersección entre producto, proyectos, equipos, usuario y calidad para transformar problemas en soluciones que puedan construirse, validarse y evolucionar.</p>
@@ -55,7 +56,7 @@
         </section>
 
         <!-- METRICAS DE EXPERIENCIA -->
-        <section class="project-metrics" aria-label="Métricas de experiencia en proyectos">
+        <section class="project-metrics" aria-label="Métricas de experiencia en proyectos" data-aos="fade-up">
             <div class="metrics-container">
                 <article class="metric-item metric-neutral">
                     <strong>11</strong>
@@ -78,7 +79,7 @@
         </section>
 
         <!-- COMO TRABAJO -->
-        <section class="work-method-section" aria-labelledby="work-method-title">
+        <section class="work-method-section" aria-labelledby="work-method-title" data-aos="fade-up">
             <div class="work-method-inner">
                 <p class="eyebrow eyebrow-light">Metodología</p>
                 <h2 id="work-method-title" class="section-title section-title-light">Cómo trabajo</h2>
@@ -91,7 +92,7 @@
         </section>
 
         <!-- PROYECTOS SELECCIONADOS -->
-        <section class="selected-projects-section" aria-labelledby="selected-projects-title">
+        <section class="selected-projects-section" aria-labelledby="selected-projects-title" data-aos="fade-up">
             <div class="selected-projects-inner">
                 <div class="section-heading-row">
                     <div><p class="eyebrow">Evidencia</p><h2 id="selected-projects-title" class="section-title">Proyectos seleccionados</h2></div>
@@ -125,7 +126,7 @@
         </section>
 
         <!-- DE PROBLEMAS A PRODUCTOS -->
-        <section class="page-section problems-section">
+        <section class="page-section problems-section" data-aos="fade-up">
             <h2 class="section-title">De problemas a productos</h2>
 
             <p>Trabajo en la intersección entre producto y ejecución: ayudo a transformar problemas, necesidades y oportunidades en decisiones y trabajo que un equipo pueda llevar adelante.</p>
@@ -170,7 +171,7 @@
         </section>
 
         <!-- CAPACIDADES -->
-        <section class="page-section capacities-section">
+        <section class="page-section capacities-section" data-aos="fade-up">
             <p class="eyebrow">Capacidades</p>
             <h2 class="section-title">Capacidades que pongo en práctica</h2>
             <div class="capacities-stage">
@@ -210,7 +211,7 @@
         </section>
 
         <!-- CONTACTO -->
-        <section id="contacto" class="page-section contact-section">
+        <section id="contacto" class="page-section contact-section" data-aos="fade-up">
             <h2 class="section-title">¿Construimos algo que perdure?</h2>
             <p>Si querés conversar sobre producto, gestión, calidad o explorar proyectos en conjunto, conectemos.</p>
             <a href="https://www.linkedin.com/in/lorena-paola-sartori-pm/" target="_blank" rel="noopener noreferrer" class="header-action">Conectar en LinkedIn</a>
@@ -241,6 +242,15 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 650,
+            once: true,
+            offset: 48,
+            disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        });
+    </script>
 
 </body>
 

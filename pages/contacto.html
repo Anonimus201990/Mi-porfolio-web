@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- CSS externo -->
   <link rel="stylesheet" href="../style/styles.css">
 </head>
@@ -48,7 +49,7 @@
   </header>
 
   <main class="site-main">
-    <section class="page-section contact-section">
+    <section class="page-section contact-section" data-aos="fade-up">
       <h1 class="page-title">Hablemos</h1>
       <p>Si querés conversar sobre producto, gestión, calidad o explorar un proyecto en conjunto, podemos conectar por LinkedIn.</p>
       <a href="https://www.linkedin.com/in/lorena-paola-sartori-pm/" target="_blank" rel="noopener noreferrer" class="header-action">Conectar en LinkedIn</a>
@@ -78,6 +79,14 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 650,
+      once: true,
+      offset: 48,
+      disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    });
+  </script></body>
 
 </html>

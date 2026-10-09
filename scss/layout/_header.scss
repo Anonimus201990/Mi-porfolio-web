@@ -100,7 +100,7 @@
   .site-navbar .header-actions { justify-content: flex-start; width: 100%; }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: $breakpoint-xl) {
   .site-header { flex-direction: row; }
   .site-nav { width: auto; flex: 1 1 auto; }
   .nav-list { flex-direction: row; }

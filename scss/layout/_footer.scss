@@ -34,10 +34,10 @@
   font-size: 12px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-md) {
   .footer-nav-list { flex-direction: row; flex-wrap: wrap; gap: 16px; }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: $breakpoint-xl) {
   .footer-nav-list { gap: 20px; }
 }

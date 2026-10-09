@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- CSS externo -->
   <link rel="stylesheet" href="../style/styles.css">
 </head>
@@ -50,7 +51,7 @@
   <main class="site-main">
 
     <!-- Presentación -->
-    <section class="page-section">
+    <section class="page-section" data-aos="fade-up">
       <h1 class="page-title">Ideas y recursos</h1>
 
       <p>
@@ -70,7 +71,7 @@
     </section>
 
     <!-- Información general breve -->
-    <section class="page-section">
+    <section class="page-section" data-aos="fade-up">
       <h2 class="section-title">Qué vas a encontrar aquí</h2>
 
       <p>
@@ -80,7 +81,7 @@
     </section>
 
     <!-- Servicios / Destacados / Beneficios -->
-    <section class="page-section">
+    <section class="page-section" data-aos="fade-up">
       <h2 class="section-title">Destacados y recursos prácticos</h2>
 
       <ul>
@@ -93,7 +94,7 @@
     </section>
 
     <!-- Contenido embebido -->
-    <section class="page-section">
+    <section class="page-section" data-aos="fade-up">
       <h2 class="section-title">Espacio de aprendizaje</h2>
 
       <p>
@@ -115,7 +116,7 @@
     </section>
 
     <!-- CTA / Enlaces útiles -->
-    <section class="page-section">
+    <section class="page-section" data-aos="fade-up">
       <h2 class="section-title">Materiales y contacto</h2>
 
       <p>
@@ -154,5 +155,13 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 650,
+      once: true,
+      offset: 48,
+      disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    });
+  </script></body>
 </html>

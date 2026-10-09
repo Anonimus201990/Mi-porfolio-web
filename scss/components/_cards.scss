@@ -1,6 +1,9 @@
 @use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
 
 .project-card {
+  @extend %motion-surface;
+
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -9,7 +12,9 @@
   background-color: $color-white;
   border: 3px solid $color-ink;
 
-  &:hover { transform: translateY(-4px); border-color: $color-red; }
+  @media (hover: hover) {
+    &:hover { transform: translateY(-4px); border-color: $color-red; }
+  }
   &:active { transform: translateY(-1px); }
   &:focus-within { border-color: $color-yellow; }
 }

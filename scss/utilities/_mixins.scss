@@ -34,3 +34,17 @@
   width: min(1152px, calc(100% - 48px));
   margin: 0 auto;
 }
+
+@mixin responsive-grid($minimum-column-width, $gap: $space-3) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, $minimum-column-width), 1fr));
+  gap: $gap;
+}
+
+%motion-surface {
+  transition: transform $transition-fast, border-color $transition-fast;
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}

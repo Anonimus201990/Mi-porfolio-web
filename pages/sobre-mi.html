@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- CSS externo -->
   <link rel="stylesheet" href="../style/styles.css">
 </head>
@@ -49,7 +50,7 @@
 
   <main class="site-main">
 
-    <section class="page-section">
+    <section class="page-section" data-aos="fade-up">
       <h1 class="page-title">Sobre mí</h1>
 
       <article>
@@ -78,7 +79,7 @@
       </figure>
     </section>
 
-    <section class="page-section">
+    <section class="page-section" data-aos="fade-up">
       <h2 class="section-title">Mi recorrido profesional</h2>
 
       <article class="project-card">
@@ -97,7 +98,7 @@
       </article>
     </section>
 
-    <section class="page-section">
+    <section class="page-section" data-aos="fade-up">
       <h2 class="section-title">Cómo evolucionó mi mirada</h2>
 
       <article class="project-card">
@@ -107,7 +108,7 @@
       </article>
     </section>
 
-    <section class="page-section">
+    <section class="page-section" data-aos="fade-up">
       <h2 class="section-title">Romper estereotipos</h2>
 
       <article class="project-card">
@@ -117,7 +118,7 @@
       </article>
     </section>
 
-    <section class="page-section exploration-section">
+    <section class="page-section exploration-section" data-aos="fade-up">
       <h2 class="section-title">Actualmente estoy explorando</h2>
 
       <article class="project-card exploration-card">
@@ -156,5 +157,13 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 650,
+      once: true,
+      offset: 48,
+      disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    });
+  </script></body>
 </html>

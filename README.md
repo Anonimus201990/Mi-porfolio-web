@@ -130,6 +130,8 @@ La tecnología es el medio para materializar el concepto. El objetivo no fue dem
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=sass&logoColor=white)
+![AOS](https://img.shields.io/badge/AOS-Animaciones-171717?style=flat-square)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-171717?style=flat-square&logo=github&logoColor=white)
@@ -160,7 +162,15 @@ Este portfolio todavía está en construcción, y eso también forma parte del p
 - **Repositorio público:** [github.com/Anonimus201990/Mi-porfolio-web](https://github.com/Anonimus201990/Mi-porfolio-web)
 - **Sitio desplegado:** [anonimus201990.github.io/Mi-porfolio-web](https://anonimus201990.github.io/Mi-porfolio-web)
 
-Cloná el repositorio y abrí `index.html` en el navegador. También podés usar la extensión **Live Server** de VS Code. Bootstrap 5.3.3 y las insignias se cargan desde CDN, por lo que se necesita conexión a internet.
+Cloná el repositorio y abrí `index.html` en el navegador. También podés usar la extensión **Live Server** de VS Code. Bootstrap 5.3.3, AOS, las fuentes y las insignias se cargan desde CDN, por lo que se necesita conexión a internet.
+
+Los estilos fuente están organizados en módulos SCSS dentro de `scss/`. `scss/main.scss` importa las utilidades, estilos base, layout y componentes; `style/styles.css` es la hoja CSS compilada que utilizan las páginas. La arquitectura incluye grillas fluidas con mixins parametrizados, un placeholder compartido con `@extend` y variables de espaciado calculadas con operadores Sass. El diseño parte de mobile y adapta las grillas en `768px` (tablet) y `1024px` (escritorio).
+
+La imagen principal usa una animación nativa con `@keyframes`; las secciones incorporan animaciones al desplazarse con AOS. Se respeta la preferencia del sistema por movimiento reducido. Para regenerar el CSS después de modificar los SCSS, ejecutá Sass:
+
+```bash
+sass scss/main.scss style/styles.css
+```
 
 ```bash
 git clone https://github.com/Anonimus201990/Mi-porfolio-web.git
@@ -185,6 +195,22 @@ Mi-porfolio-web/
 │   ├── como-trabajo.html
 │   ├── ideas-recursos.html
 │   └── contacto.html
+├── scss/
+│   ├── main.scss
+│   ├── base/
+│   │   ├── _general.scss
+│   │   └── _tipografia.scss
+│   ├── components/
+│   │   ├── _buttons.scss
+│   │   ├── _cards.scss
+│   │   └── _carousel.scss
+│   ├── layout/
+│   │   ├── _header.scss
+│   │   ├── _nav.scss
+│   │   └── _footer.scss
+│   └── utilities/
+│       ├── _variables.scss
+│       └── _mixins.scss
 └── style/
     └── styles.css
 ```
