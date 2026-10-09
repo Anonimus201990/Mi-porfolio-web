@@ -207,7 +207,7 @@ p {
 .hero-image {
   grid-area: image;
   width: 100%;
-  animation: hero-image-enter 700ms ease-out both;
+  animation: hero-image-enter 500ms ease-out both;
 }
 
 @keyframes hero-image-enter {
