@@ -162,7 +162,7 @@ Este portfolio todavía está en construcción, y eso también forma parte del p
 - **Repositorio público:** [github.com/Anonimus201990/Mi-porfolio-web](https://github.com/Anonimus201990/Mi-porfolio-web)
 - **Sitio desplegado:** [anonimus201990.github.io/Mi-porfolio-web](https://anonimus201990.github.io/Mi-porfolio-web)
 
-Cloná el repositorio y abrí `index.html` en el navegador. También podés usar la extensión **Live Server** de VS Code. Bootstrap 5.3.3, AOS, las fuentes y las insignias se cargan desde CDN, por lo que se necesita conexión a internet.
+Cloná el repositorio y abrí `index.html` en el navegador. También podés usar la extensión **Live Server** de VS Code. Bootstrap 5.3.3, AOS 2.3.4, las fuentes y las insignias se cargan desde CDN, por lo que se necesita conexión a internet.
 
 Los estilos fuente están organizados en módulos SCSS dentro de `scss/`. `scss/main.scss` importa las utilidades, estilos base, layout y componentes; `style/styles.css` es la hoja CSS compilada que utilizan las páginas. La arquitectura incluye grillas fluidas con mixins parametrizados, un placeholder compartido con `@extend` y variables de espaciado calculadas con operadores Sass. El diseño parte de mobile y adapta las grillas en `768px` (tablet) y `1024px` (escritorio).
 
