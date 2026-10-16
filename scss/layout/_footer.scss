@@ -9,10 +9,17 @@
 }
 
 .footer-content {
-  @include flex-column(16px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.footer-content > .brand-name { grid-column: 1; grid-row: 1; }
+.footer-content > .brand-label { grid-column: 1; grid-row: 2; }
+.footer-content .site-nav { grid-column: 1 / -1; grid-row: 3; }
 
 .footer-nav-list {
   display: flex;
@@ -30,8 +37,47 @@
 }
 
 .footer-copy {
+  grid-column: 1 / -1;
+  grid-row: 4;
+  margin: 0;
   color: $color-footer-copy;
   font-size: 12px;
+  text-align: center;
+}
+
+.footer-socials {
+  display: flex;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  justify-self: end;
+  gap: 10px;
+}
+
+.footer-socials a {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  color: $color-yellow;
+  border: 1px solid $color-yellow;
+  transition: color $transition-fast, background-color $transition-fast;
+
+  &:hover {
+    color: $color-ink;
+    background-color: $color-yellow;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-white;
+    outline-offset: 3px;
+  }
+}
+
+.footer-socials svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
 }
 
 @media (min-width: $breakpoint-md) {
@@ -39,5 +85,15 @@
 }
 
 @media (min-width: $breakpoint-xl) {
+  .footer-content { grid-template-columns: max-content minmax(0, 1fr) auto; }
+  .footer-content > .brand-name { grid-column: 1; grid-row: 1; }
+  .footer-content > .brand-label { grid-column: 1; grid-row: 2; }
+  .footer-content .site-nav { grid-column: 2; grid-row: 1 / span 2; }
+  .footer-socials { grid-column: 3; grid-row: 1 / span 2; }
+  .footer-copy { grid-column: 1 / -1; grid-row: 3; }
   .footer-nav-list { gap: 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-socials a { transition: none; }
 }

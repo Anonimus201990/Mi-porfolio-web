@@ -20,9 +20,9 @@
   transition: all 0.3s ease;
 
   &:hover,
-  &:focus,
+  &:focus { color: $color-yellow; }
   &.active,
-  &[aria-current='page'] { color: $color-yellow; }
+  &[aria-current='page'] { color: $color-red; }
 
   &:active { transform: translateY(1px); }
 }
