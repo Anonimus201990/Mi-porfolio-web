@@ -1007,27 +1007,26 @@ article p:last-child {
   color: #171717;
 }
 
-.about-page .page-section:nth-child(2) {
+.about-page .career-journey-section {
   border-top: 8px solid #E7BD5A;
 }
 
-.about-page .page-section:nth-child(3) {
+.about-page .career-evolution-section {
   background-color: #FFFFFF;
   border-left: 8px solid #46B8A8;
 }
 
-.about-page .page-section:nth-child(4) {
+.about-page .stereotypes-section {
   background-color: #E7BD5A;
 }
 
-.about-page .page-section:nth-child(5) {
-  background-color: #171717;
+.about-page .stereotypes-section .project-card {
+  background-color: #FFFFFF;
+  border-color: #171717;
 }
 
-.about-page .page-section:nth-child(5) .section-title,
-.about-page .page-section:nth-child(5) p,
-.about-page .page-section:nth-child(5) li {
-  color: #F7F5EF;
+.about-page .stereotypes-section .project-card p {
+  color: #171717;
 }
 
 .projects-page .page-section:nth-child(2) {
@@ -2329,8 +2328,38 @@ article p:last-child {
   }
 }
 
+.recommendations-carousel {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr) 40px;
+  align-items: center;
+  gap: 8px;
+}
+
+.recommendation-control {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  color: #171717;
+  background-color: #FFFFFF;
+  border: 1px solid #171717;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.recommendation-control:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.recommendation-control:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
 .recommendations-track {
   display: flex;
+  min-width: 0;
   gap: 16px;
   overflow-x: auto;
   padding: 4px 4px 16px;
@@ -2345,8 +2374,20 @@ article p:last-child {
 }
 
 .recommendation-slide {
-  flex: 0 0 100%;
+  flex: 0 0 86%;
+  min-height: 270px;
+  justify-content: space-between;
   scroll-snap-align: start;
+  color: #171717;
+  background-color: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  box-shadow: 0 2px 8px rgba(23, 23, 23, 0.08);
+  text-decoration: none;
+}
+
+.recommendation-slide:focus-visible {
+  outline: 3px solid #1769AA;
+  outline-offset: 3px;
 }
 
 .recommendation-figure {
@@ -2356,11 +2397,19 @@ article p:last-child {
   margin: 0;
 }
 
+.recommendations-section .recommendation-figure {
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+}
+
 .recommendation-figure blockquote {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .recommendation-figure blockquote p {
@@ -2374,6 +2423,13 @@ article p:last-child {
   gap: 4px;
 }
 
+.recommendations-section .recommendation-author {
+  padding: 0;
+  color: #171717;
+  background-color: transparent;
+  font-size: inherit;
+}
+
 .recommendation-author time,
 .recommendation-author span {
   color: #5F625F;
@@ -2382,6 +2438,19 @@ article p:last-child {
 .recommendation-author a,
 .recommendation-metric > a {
   font-weight: 700;
+}
+
+.recommendation-summary {
+  color: #171717;
+  line-height: 1.6;
+}
+
+.recommendation-card-action {
+  margin-top: auto;
+  color: #1769AA;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .recommendation-themes {
@@ -2396,6 +2465,23 @@ article p:last-child {
   color: #171717;
   background-color: #F7F5EF;
   border: 1px solid #171717;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.recommendation-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.recommendation-keywords span {
+  padding: 6px 12px;
+  color: #171717;
+  background-color: #F7F5EF;
+  border: 1px solid #171717;
+  border-radius: 999px;
   font-size: 14px;
   font-weight: 600;
 }
@@ -2444,4 +2530,39 @@ article p:last-child {
 .recommendation-count span {
   font-size: 1.25rem;
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .recommendation-slide {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .recommendation-slide {
+    flex-basis: calc((100% - 32px) / 3);
+  }
+}
+
+@media (max-width: 575px) {
+  .recommendations-carousel {
+    grid-template-rows: auto 40px;
+  }
+
+  .recommendation-control {
+    grid-row: 2;
+  }
+
+  .recommendation-control[data-recommendation-prev] {
+    grid-column: 1;
+  }
+
+  .recommendation-control[data-recommendation-next] {
+    grid-column: 3;
+  }
+
+  .recommendations-track {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
 }

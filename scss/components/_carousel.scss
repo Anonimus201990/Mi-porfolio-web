@@ -75,8 +75,38 @@
 .gallery-carousel .carousel-control-prev:hover,
 .gallery-carousel .carousel-control-next:hover { opacity: 0.7; }
 
+.recommendations-carousel {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr) 40px;
+  align-items: center;
+  gap: 8px;
+}
+
+.recommendation-control {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  color: $color-ink;
+  background-color: $color-white;
+  border: 1px solid $color-ink;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.recommendation-control:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.recommendation-control:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
 .recommendations-track {
   display: flex;
+  min-width: 0;
   gap: 16px;
   overflow-x: auto;
   padding: 4px 4px 16px;
@@ -91,8 +121,20 @@
 }
 
 .recommendation-slide {
-  flex: 0 0 100%;
+  flex: 0 0 86%;
+  min-height: 270px;
+  justify-content: space-between;
   scroll-snap-align: start;
+  color: $color-ink;
+  background-color: $color-white;
+  border: 1px solid #E4E4E4;
+  box-shadow: 0 2px 8px rgba(23, 23, 23, 0.08);
+  text-decoration: none;
+}
+
+.recommendation-slide:focus-visible {
+  outline: 3px solid $color-blue;
+  outline-offset: 3px;
 }
 
 .recommendation-figure {
@@ -102,11 +144,19 @@
   margin: 0;
 }
 
+.recommendations-section .recommendation-figure {
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+}
+
 .recommendation-figure blockquote {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .recommendation-figure blockquote p { margin: 0; }
@@ -118,10 +168,30 @@
   gap: 4px;
 }
 
+.recommendations-section .recommendation-author {
+  padding: 0;
+  color: $color-ink;
+  background-color: transparent;
+  font-size: inherit;
+}
+
 .recommendation-author time,
 .recommendation-author span { color: $color-gray; }
 
 .recommendation-author a { font-weight: 700; }
+
+.recommendation-summary {
+  color: $color-ink;
+  line-height: 1.6;
+}
+
+.recommendation-card-action {
+  margin-top: auto;
+  color: $color-blue;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
 .recommendation-themes {
   display: flex;
@@ -135,6 +205,23 @@
   color: $color-ink;
   background-color: $color-cream;
   border: 1px solid $color-ink;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.recommendation-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.recommendation-keywords span {
+  padding: 6px 12px;
+  color: $color-ink;
+  background-color: $color-cream;
+  border: 1px solid $color-ink;
+  border-radius: 999px;
   font-size: 14px;
   font-weight: 600;
 }
@@ -184,10 +271,38 @@
 .recommendation-metric > a { font-weight: 700; }
 
 @media (min-width: $breakpoint-md) {
+  .recommendation-slide { flex-basis: calc((100% - 16px) / 2); }
   .selected-project-carousel .carousel-inner,
   .selected-project-carousel .carousel-item { height: 100%; }
   .gallery-carousel { height: 440px; }
   .gallery-carousel .carousel-inner,
   .gallery-carousel .carousel-item { height: 100%; }
   .gallery-carousel .carousel-item img { height: 100%; }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .recommendation-slide { flex-basis: calc((100% - 32px) / 3); }
+}
+
+@media (max-width: 575px) {
+  .recommendations-carousel {
+    grid-template-rows: auto 40px;
+  }
+
+  .recommendation-control {
+    grid-row: 2;
+  }
+
+  .recommendation-control[data-recommendation-prev] {
+    grid-column: 1;
+  }
+
+  .recommendation-control[data-recommendation-next] {
+    grid-column: 3;
+  }
+
+  .recommendations-track {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
 }
