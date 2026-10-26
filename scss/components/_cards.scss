@@ -40,19 +40,21 @@
 
 .card-blue { color: $color-white; background-color: $color-blue; }
 .card-red { color: $color-white; background-color: $color-red; }
-.card-teal { color: $color-white; background-color: $color-teal; }
+.card-teal { color: $color-ink; background-color: $color-teal; }
 .card-yellow { color: $color-ink; background-color: $color-yellow; }
 .card-black { color: $color-white; background-color: $color-ink; }
 .card-blue h3,
 .card-blue p,
 .card-red h3,
 .card-red p,
-.card-teal h3,
-.card-teal p,
 .card-black h3,
 .card-black p { color: $color-white; }
+.card-teal h3,
+.card-teal p { color: $color-ink; }
 
 .selected-project-card h3 { margin-top: 12px; }
 .selected-project-card p { margin-bottom: 24px; color: $color-gray; }
 
 .project-card-label { margin-right: 24px; margin-left: 24px; }
+
+.tag-teal { color: $color-ink; }

@@ -112,7 +112,7 @@ p {
 }
 .site-body a:focus-visible,
 .site-body button:focus-visible {
-  outline: 2px solid #E7BD5A;
+  outline: 2px solid currentColor;
   outline-offset: 3px;
 }
 .site-body a:active,
@@ -695,7 +695,7 @@ article p:last-child {
 }
 
 .card-teal {
-  color: #FFFFFF;
+  color: #171717;
   background-color: #46B8A8;
 }
 
@@ -713,11 +713,14 @@ article p:last-child {
 .card-blue p,
 .card-red h3,
 .card-red p,
-.card-teal h3,
-.card-teal p,
 .card-black h3,
 .card-black p {
   color: #FFFFFF;
+}
+
+.card-teal h3,
+.card-teal p {
+  color: #171717;
 }
 
 .journey-yellow,
@@ -841,7 +844,7 @@ article p:last-child {
 }
 
 .tag-teal {
-  color: #FFFFFF;
+  color: #171717;
   background-color: #46B8A8;
   border-color: #46B8A8;
 }
@@ -904,8 +907,11 @@ article p:last-child {
 }
 
 .inner-page .page-title {
+  width: 100%;
+  min-width: 0;
   max-width: 900px;
-  font-size: clamp(2.5rem, 14vw, 4rem);
+  font-size: clamp(2.5rem, 10vw, 56px);
+  overflow-wrap: anywhere;
 }
 
 .inner-page .project-card {
@@ -1215,9 +1221,6 @@ article p:last-child {
   .inner-page .page-section:first-child {
     padding-top: 80px;
   }
-  .inner-page .page-title {
-    font-size: clamp(3rem, 8vw, 6rem);
-  }
   .inner-page.work-page ol .project-card {
     width: calc(100% - 72px);
     padding: 24px;
@@ -1406,6 +1409,7 @@ article p:last-child {
 }
 
 .resources-page .resource-grid li:nth-child(4n+2) {
+  color: #171717;
   background-color: #46B8A8;
 }
 
@@ -1489,6 +1493,11 @@ article p:last-child {
 .resources-page .resource-grid li:nth-child(4) strong,
 .resources-page .resource-grid li:nth-child(4) span {
   color: #FFFFFF;
+}
+
+.resources-page .resource-grid li:nth-child(2) strong,
+.resources-page .resource-grid li:nth-child(2) span {
+  color: #171717;
 }
 
 @media (min-width: 768px) {
@@ -1575,7 +1584,7 @@ article p:last-child {
 .contact-page .contact-section .page-title {
   grid-area: title;
   color: #171717;
-  font-size: clamp(3rem, 12vw, 6rem);
+  font-size: clamp(2.5rem, 10vw, 56px);
 }
 
 .contact-page .contact-section > p:not(.eyebrow) {
@@ -1865,7 +1874,7 @@ article p:last-child {
   transition: all 0.3s ease;
 }
 .site-navbar .nav-link:hover, .site-navbar .nav-link:focus {
-  color: #E7BD5A;
+  color: #D92525;
 }
 .site-navbar .nav-link.active, .site-navbar .nav-link[aria-current=page] {
   color: #D92525;
@@ -2034,16 +2043,16 @@ article p:last-child {
 .btn {
   display: inline-block;
   padding: 10px 18px;
-  color: #171717;
-  background-color: #FFFFFF;
   border: 2px solid #FFFFFF;
+  border-radius: 0;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
-  border-radius: 0;
   text-transform: uppercase;
   transition: all 0.3s ease;
+  color: #171717;
+  background-color: #FFFFFF;
 }
 .header-action:hover,
 .btn:hover {
@@ -2075,7 +2084,7 @@ article p:last-child {
 .site-navbar .nav-link:focus-visible,
 .footer-nav-list a:focus-visible,
 .gallery-carousel button:focus-visible {
-  outline: 2px solid #E7BD5A;
+  outline: 2px solid currentColor;
   outline-offset: 3px;
 }
 
@@ -2152,7 +2161,7 @@ article p:last-child {
 }
 
 .card-teal {
-  color: #FFFFFF;
+  color: #171717;
   background-color: #46B8A8;
 }
 
@@ -2170,11 +2179,14 @@ article p:last-child {
 .card-blue p,
 .card-red h3,
 .card-red p,
-.card-teal h3,
-.card-teal p,
 .card-black h3,
 .card-black p {
   color: #FFFFFF;
+}
+
+.card-teal h3,
+.card-teal p {
+  color: #171717;
 }
 
 .selected-project-card h3 {

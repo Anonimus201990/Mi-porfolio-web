@@ -401,17 +401,17 @@ article p:last-child { margin-bottom: 0; }
 .capacities-stage .capacity-card p { color: $color-ink; }
 .card-blue { color: $color-white; background-color: $color-blue; }
 .card-red { color: $color-white; background-color: $color-red; }
-.card-teal { color: $color-white; background-color: $color-teal; }
+.card-teal { color: $color-ink; background-color: $color-teal; }
 .card-yellow { color: $color-ink; background-color: $color-yellow; }
 .card-black { color: $color-white; background-color: $color-ink; }
 .card-blue h3,
 .card-blue p,
 .card-red h3,
 .card-red p,
-.card-teal h3,
-.card-teal p,
 .card-black h3,
 .card-black p { color: $color-white; }
+.card-teal h3,
+.card-teal p { color: $color-ink; }
 
 .journey-yellow,
 .stereotype-yellow,
@@ -531,8 +531,11 @@ article p:last-child { margin-bottom: 0; }
 }
 .inner-page .page-section > figure figcaption { background-color: $color-ink; }
 .inner-page .page-title {
+  width: 100%;
+  min-width: 0;
   max-width: 900px;
-  font-size: clamp(2.5rem, 14vw, 4rem);
+  font-size: clamp(2.5rem, 10vw, 56px);
+  overflow-wrap: anywhere;
 }
 .inner-page .project-card { margin-top: 24px; }
 .inner-page .project-card h3 { margin-bottom: 8px; }
@@ -691,7 +694,6 @@ article p:last-child { margin-bottom: 0; }
   .section-heading-row { align-items: flex-end; flex-direction: row; justify-content: space-between; }
   .inner-page .page-section { width: min(1152px, calc(100% - 48px)); padding: 80px 24px; }
   .inner-page .page-section:first-child { padding-top: 80px; }
-  .inner-page .page-title { font-size: clamp(3rem, 8vw, 6rem); }
   .inner-page.work-page ol .project-card { width: calc(100% - 72px); padding: 24px; }
   .inner-page .contact-section { min-height: 360px; }
   .projects-page .featured-case {
@@ -822,7 +824,10 @@ article p:last-child { margin-bottom: 0; }
   overflow-wrap: anywhere;
 }
 
-.resources-page .resource-grid li:nth-child(4n + 2) { background-color: $color-teal; }
+.resources-page .resource-grid li:nth-child(4n + 2) {
+  color: $color-ink;
+  background-color: $color-teal;
+}
 .resources-page .resource-grid li:nth-child(4n) {
   color: $color-white;
   background-color: $color-ink;
@@ -876,6 +881,8 @@ article p:last-child { margin-bottom: 0; }
 .resources-page .resource-grid li:nth-child(4)::before { color: $color-yellow; }
 .resources-page .resource-grid li:nth-child(4) strong,
 .resources-page .resource-grid li:nth-child(4) span { color: $color-white; }
+.resources-page .resource-grid li:nth-child(2) strong,
+.resources-page .resource-grid li:nth-child(2) span { color: $color-ink; }
 
 @media (min-width: $breakpoint-md) {
   .about-page .about-hero,
@@ -954,7 +961,7 @@ article p:last-child { margin-bottom: 0; }
 .contact-page .contact-section .page-title {
   grid-area: title;
   color: $color-ink;
-  font-size: clamp(3rem, 12vw, 6rem);
+  font-size: clamp(2.5rem, 10vw, 56px);
 }
 .contact-page .contact-section > p:not(.eyebrow) {
   grid-area: copy;

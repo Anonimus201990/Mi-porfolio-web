@@ -20,7 +20,7 @@
   transition: all 0.3s ease;
 
   &:hover,
-  &:focus { color: $color-yellow; }
+  &:focus { color: $color-red; }
   &.active,
   &[aria-current='page'] { color: $color-red; }
 
