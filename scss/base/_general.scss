@@ -592,13 +592,17 @@ article p:last-child { margin-bottom: 0; }
 .about-page .exploration-card { background-color: $color-white; border-color: $color-yellow; }
 .about-page .page-section.exploration-section .exploration-card p,
 .about-page .page-section.exploration-section .exploration-card li { color: $color-ink; }
-.about-page .page-section:nth-child(2) { border-top: 8px solid $color-yellow; }
-.about-page .page-section:nth-child(3) { background-color: $color-white; border-left: 8px solid $color-teal; }
-.about-page .page-section:nth-child(4) { background-color: $color-yellow; }
-.about-page .page-section:nth-child(5) { background-color: $color-ink; }
-.about-page .page-section:nth-child(5) .section-title,
-.about-page .page-section:nth-child(5) p,
-.about-page .page-section:nth-child(5) li { color: $color-cream; }
+.about-page .career-journey-section { border-top: 8px solid $color-yellow; }
+.about-page .career-evolution-section {
+  background-color: $color-white;
+  border-left: 8px solid $color-teal;
+}
+.about-page .stereotypes-section { background-color: $color-yellow; }
+.about-page .stereotypes-section .project-card {
+  background-color: $color-white;
+  border-color: $color-ink;
+}
+.about-page .stereotypes-section .project-card p { color: $color-ink; }
 
 .projects-page .page-section:nth-child(2) { border-top: 8px solid $color-blue; }
 .projects-page .page-section:nth-child(3) { border-top: 8px solid $color-red; }
