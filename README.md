@@ -186,8 +186,8 @@ Mi-porfolio-web/
 ├── documento/
 │   └── lorena-paola-sartori.pdf
 ├── imagenes/
-│   ├── logo-lorena-paola-sartori.png
-│   ├── hero.png
+│   ├── logo-product-lab-lorena-paola-sartori.png
+│   ├── equipo-colaborando-producto-digital.png
 │   └── capturas de proyectos y recursos visuales
 ├── pages/
 │   ├── sobre-mi.html
