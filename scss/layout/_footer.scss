@@ -3,7 +3,7 @@
 
 .site-footer {
   width: 100%;
-  padding: 36px 32px;
+  padding: 80px 32px 42px;
   color: $color-white;
   background-color: $color-ink;
 }
@@ -13,13 +13,15 @@
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   gap: 8px 20px;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
 .footer-content > .brand-name { grid-column: 1; grid-row: 1; }
 .footer-content > .brand-label { grid-column: 1; grid-row: 2; }
 .footer-content .site-nav { grid-column: 1 / -1; grid-row: 3; }
+.footer-decoration { display: none; }
 
 .footer-nav-list {
   display: flex;
@@ -51,21 +53,21 @@
   grid-row: 1 / span 2;
   align-self: center;
   justify-self: end;
-  gap: 10px;
+  gap: 14px;
 }
 
 .footer-socials a {
   display: grid;
   place-items: center;
-  width: 38px;
-  height: 38px;
-  color: $color-yellow;
-  border: 1px solid $color-yellow;
+  width: 50px;
+  height: 50px;
+  color: $color-blue;
+  border: 1px solid $color-blue;
   transition: color $transition-fast, background-color $transition-fast;
 
   &:hover {
-    color: $color-ink;
-    background-color: $color-yellow;
+    color: $color-white;
+    background-color: $color-blue;
   }
 
   &:focus-visible {
@@ -85,11 +87,26 @@
 }
 
 @media (min-width: $breakpoint-xl) {
-  .footer-content { grid-template-columns: max-content minmax(0, 1fr) auto; }
+  .footer-content {
+    grid-template-columns: max-content auto minmax(0, 1fr) auto;
+    column-gap: 32px;
+    row-gap: 48px;
+  }
   .footer-content > .brand-name { grid-column: 1; grid-row: 1; }
   .footer-content > .brand-label { grid-column: 1; grid-row: 2; }
-  .footer-content .site-nav { grid-column: 2; grid-row: 1 / span 2; }
-  .footer-socials { grid-column: 3; grid-row: 1 / span 2; }
+  .footer-decoration {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-items: center;
+    gap: 32px;
+  }
+  .footer-decoration span { display: block; width: 16px; height: 16px; }
+  .footer-decoration-square:first-child { background-color: $color-red; }
+  .footer-decoration-circle { background-color: $color-blue; border-radius: 50%; }
+  .footer-decoration-square:last-child { background-color: $color-yellow; }
+  .footer-content .site-nav { grid-column: 3; grid-row: 1 / span 2; }
+  .footer-socials { grid-column: 4; grid-row: 1 / span 2; }
   .footer-copy { grid-column: 1 / -1; grid-row: 3; }
   .footer-nav-list { gap: 20px; }
 }

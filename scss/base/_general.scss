@@ -1105,47 +1105,6 @@ article p:last-child { margin-bottom: 0; }
   outline-offset: 4px;
 }
 
-.home-page .site-footer { padding: 80px 32px 42px; }
-.home-page .footer-content {
-  width: 100%;
-  max-width: 1920px;
-  row-gap: 8px;
-}
-.home-page .footer-decoration { display: none; }
-.home-page .footer-socials { gap: 14px; }
-.home-page .footer-socials a {
-  width: 50px;
-  height: 50px;
-  color: $color-blue;
-  border-color: $color-blue;
-}
-.home-page .footer-socials a:hover {
-  color: $color-white;
-  background-color: $color-blue;
-}
-
-@media (min-width: $breakpoint-xl) {
-  .home-page .footer-content {
-    grid-template-columns: max-content auto minmax(0, 1fr) auto;
-    column-gap: 32px;
-    row-gap: 48px;
-  }
-  .home-page .footer-decoration {
-    display: flex;
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    align-items: center;
-    gap: 32px;
-  }
-  .home-page .footer-decoration span { display: block; width: 16px; height: 16px; }
-  .home-page .footer-decoration-square:first-child { background-color: $color-red; }
-  .home-page .footer-decoration-circle { background-color: $color-blue; border-radius: 50%; }
-  .home-page .footer-decoration-square:last-child { background-color: $color-yellow; }
-  .home-page .footer-content .site-nav { grid-column: 3; grid-row: 1 / span 2; }
-  .home-page .footer-socials { grid-column: 4; grid-row: 1 / span 2; }
-  .home-page .footer-copy { grid-row: 3; }
-}
-
 .home-page .project-metrics { border: 0; }
 .home-page .metrics-container {
   gap: 8px;
