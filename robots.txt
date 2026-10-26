@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anonimus201990.github.io/Mi-porfolio-web/sitemap.xml
