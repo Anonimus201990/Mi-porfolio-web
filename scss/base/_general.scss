@@ -589,6 +589,7 @@ article p:last-child { margin-bottom: 0; }
 }
 
 .about-page .exploration-section { background-color: $color-ink; }
+.about-page .exploration-section > .section-title { color: $color-white; }
 .about-page .exploration-card { background-color: $color-white; border-color: $color-yellow; }
 .about-page .page-section.exploration-section .exploration-card p,
 .about-page .page-section.exploration-section .exploration-card li { color: $color-ink; }
@@ -603,6 +604,37 @@ article p:last-child { margin-bottom: 0; }
   border-color: $color-ink;
 }
 .about-page .stereotypes-section .project-card p { color: $color-ink; }
+
+.resources-page .blog-post-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
+.inner-page.resources-page ul.blog-post-list > li {
+  padding: 0;
+  border: 0;
+}
+.resources-page .blog-post-link {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  color: $color-ink;
+  background-color: $color-white;
+  border: 2px solid $color-ink;
+  text-decoration: none;
+}
+.resources-page .blog-post-link:hover { border-color: $color-blue; }
+.resources-page .blog-post-link:focus-visible {
+  outline: 3px solid $color-blue;
+  outline-offset: 3px;
+}
+.resources-page .blog-post-link time { color: $color-gray; }
+.resources-page .blog-post-link strong { color: $color-blue; }
 
 .projects-page .page-section:nth-child(2) { border-top: 8px solid $color-blue; }
 .projects-page .page-section:nth-child(3) { border-top: 8px solid $color-red; }
@@ -1029,6 +1061,7 @@ article p:last-child { margin-bottom: 0; }
 @media (min-width: $breakpoint-md) {
   .resources-page .resource-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .resources-page .resource-grid li:last-child { grid-column: 1 / -1; }
+  .resources-page .blog-post-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .contact-page .contact-section {
     grid-template-columns: minmax(0, 1.1fr) minmax(220px, 0.9fr);
     grid-template-areas: 'eyebrow art' 'title art' 'copy art';

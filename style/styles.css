@@ -997,6 +997,10 @@ article p:last-child {
   background-color: #171717;
 }
 
+.about-page .exploration-section > .section-title {
+  color: #FFFFFF;
+}
+
 .about-page .exploration-card {
   background-color: #FFFFFF;
   border-color: #E7BD5A;
@@ -1027,6 +1031,49 @@ article p:last-child {
 
 .about-page .stereotypes-section .project-card p {
   color: #171717;
+}
+
+.resources-page .blog-post-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
+
+.inner-page.resources-page ul.blog-post-list > li {
+  padding: 0;
+  border: 0;
+}
+
+.resources-page .blog-post-link {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  color: #171717;
+  background-color: #FFFFFF;
+  border: 2px solid #171717;
+  text-decoration: none;
+}
+
+.resources-page .blog-post-link:hover {
+  border-color: #1769AA;
+}
+
+.resources-page .blog-post-link:focus-visible {
+  outline: 3px solid #1769AA;
+  outline-offset: 3px;
+}
+
+.resources-page .blog-post-link time {
+  color: #5F625F;
+}
+
+.resources-page .blog-post-link strong {
+  color: #1769AA;
 }
 
 .projects-page .page-section:nth-child(2) {
@@ -1671,6 +1718,9 @@ article p:last-child {
   }
   .resources-page .resource-grid li:last-child {
     grid-column: 1/-1;
+  }
+  .resources-page .blog-post-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .contact-page .contact-section {
     grid-template-columns: minmax(0, 1.1fr) minmax(220px, 0.9fr);
