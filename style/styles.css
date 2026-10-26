@@ -2328,3 +2328,120 @@ article p:last-child {
     height: 100%;
   }
 }
+
+.recommendations-track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 4px 4px 16px;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  scrollbar-color: #1769AA #F7F5EF;
+}
+
+.recommendations-track:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.recommendation-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
+.recommendation-figure {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0;
+}
+
+.recommendation-figure blockquote {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+}
+
+.recommendation-figure blockquote p {
+  margin: 0;
+}
+
+.recommendation-author {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.recommendation-author time,
+.recommendation-author span {
+  color: #5F625F;
+}
+
+.recommendation-author a,
+.recommendation-metric > a {
+  font-weight: 700;
+}
+
+.recommendation-themes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.recommendation-themes span {
+  padding: 6px 12px;
+  color: #171717;
+  background-color: #F7F5EF;
+  border: 1px solid #171717;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.recommendation-invitation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 24px;
+  padding: 24px;
+  background-color: #F7F5EF;
+  border-left: 6px solid #1769AA;
+}
+
+.recommendation-invitation p {
+  margin: 0;
+}
+
+.recommendation-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+  background-color: #FFFFFF;
+  border: 3px solid #171717;
+}
+
+.recommendation-metric p {
+  margin: 0;
+}
+
+.recommendation-count {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.recommendation-count strong {
+  color: #1769AA;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  line-height: 1;
+}
+
+.recommendation-count span {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
